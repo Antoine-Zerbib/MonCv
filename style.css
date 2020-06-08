@@ -85,8 +85,13 @@ a:visited{
 .gauche{
     margin:0 15%;
 }
+#cadrePhoto{
+    text-align: center;
+    margin-top: 40px
+}
 #photo{
     border-radius: 90px;
+    margin: auto;
 }
 #gauche h2{
     color: #FFD740;
