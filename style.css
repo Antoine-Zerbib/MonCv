@@ -1,10 +1,52 @@
-/* Général */
- 
+
+/* ---------------------------------------- */
+/* ==            SUMMARY              */
+/*---------------------------------------- */
+
+/* L1		- 1 - Mentions */
+/* L10		- 2 - Éléments principaux */
+/* L2		- 3 - Définitions des polices */
+/* L70		- 4 - Blocs and Misc*/
+/* L150		- 5 - Header */
+/* L400		-  6 - Main */
+/* L2136	- 7 - Footer */
+
+/*
+HEADER
+
+SECTIONS :
+ - Bandeau
+ - Burger
+ - Formations
+ - Expérience professionnelle
+ - Recommandations
+ - A propos de moi
+ - Contact
+ - Loisirs
+
+*/
+/* L		- 1 - */
+/* L		- 2 - */
+/* L		- 3 - */
+
+/* ---------------------------------------- */
+/* ==       COLOR CODES           */
+/*---------------------------------------- */
+/*
+Black-grey (text) :	  #37474F;
+Dark gray (links, h1) :		#008dde
+Mid gray (visited links) :	#0006a1
+Light gray (h2) :		#747474
+*/
+
+/* ---------------------------------------- */
+/* == DÉFINITIONS DES POLICES*/
+/*---------------------------------------- */
 
 
-/*@font-face{
+@font-face{
     font-family: 'FFF_Tusj.ttf';
-    src: url('FFF_Tusj.ttf');*/
+    src: url('FFF_Tusj.ttf');
 }
 @font-face{
     font-family: 'Roboto-Medium.ttf';
@@ -17,26 +59,22 @@
 
 
 
-#wrapper{
-    display: flex;
+
+/* ---------------------------------------- */
+/* == ÉLÉMENTS PRINCIPAUX */
+/*---------------------------------------- */
+
+#container{
+    
     font-family: arial, sans-serif;
     color: #37474F;
-   /* width: 900px; */
+    width: 750px; 
     margin: auto;
+    border: 1px solid red;
 }
-.prenom{
-    color: orange;
-    font-family: sans-serif;
-}
-h1{
-    font-family: /*'FFF_Tusj.ttf',*/ 'Roboto-Light.ttf', arial, serif;
-    font-size: 3em;
-    margin: 70px 0 0 0 ;
-    color: black;
-    font-weight: normal
-}
+
 h3{
-    margin: 0 0 100px 0;
+    margin: 0;
     font-size: 1.6em
 }
 h4{
@@ -57,15 +95,253 @@ h1,h2,h4,h5{
 p{
     text-align: justify;
 }
+i{
+}
 a{
+    text-decoration: none;
     color:black;
 }
+section{
+    text-align: center;
+}
+
+/*
 a:hover{
     color: red;
 }
 a:visited{
-    color: green;
+    color: darkblue;
+}*/
+
+/*     sous partie      */
+
+/*     sous partie      */
+
+/*     sous partie      */
+
+/* ---------------------------------------- */
+/* ==            HEADER                */
+/*---------------------------------------- */
+
+
+/*     h1     */ 
+
+
+.couleur{
+    color: orange;
+    font-family: sans-serif;
 }
+h1{
+    font-family:'Roboto-Light.ttf', arial, serif;
+    margin: 0;
+    color: black;
+    font-weight: normal
+}
+
+/*     Slider      */
+
+
+
+/* ---------------------------------------- */
+/* ==            BANDEAU                */
+/*---------------------------------------- */
+
+#bandeau{
+    text-align: center;
+    height: 300px;
+    display: flex;   
+    flex-direction: column;
+    flex-wrap:wrap;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+#cadrePhoto{
+    margin: auto;
+ 
+}
+#photo{
+    border-radius:125px;
+    width: 250px;
+    box-shadow: 2px 2px 4px grey;
+}
+#bandeau .icones{
+    margin: auto
+}
+#bandeau i{
+    color:#f16822;
+    font-size: 3em;
+    height: 50px;
+    width: 50px;
+    border-radius: 40px;
+    border: 2px solid #37474F;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 1px 1px 3px grey;
+    
+}
+
+
+
+
+
+/* ---------------------------------------- */
+/* ==            BURGER                */
+/*---------------------------------------- */
+#burger{
+    margin-bottom: 100px;
+}
+#burger ul{
+    list-style: none;
+    text-align: center;
+    font-size: 1.8em;
+    padding: 0px;
+    
+}
+#burger ul li{
+    height:35px;
+    color: white;
+    margin: 20px 140px;
+    background-color: orange;
+    border-radius: 15px;
+    text-transform: uppercase;
+    font-family: 'Roboto-Medium.ttf', arial, serif;
+    box-shadow: 0px 0px 20px grey inset;
+    cursor:pointer;
+}
+#burger ul li:hover{
+    color: yellow
+}
+#burger ul li:visited{
+    color: red
+}
+
+
+
+/* ---------------------------------------- */
+/* ==            FORMATIONS                */
+/*---------------------------------------- */
+
+
+
+/* ---------------------------------------- */
+/* ==            EXPERIENCE PRO                */
+/*---------------------------------------- */
+
+
+
+/* ---------------------------------------- */
+/* ==            RECOMMANDATION                */
+/*---------------------------------------- */
+
+
+
+/* ---------------------------------------- */
+/* ==            A PROPOS                */
+/*---------------------------------------- */
+#propos{
+    margin: 0 10%
+}
+
+
+/* ---------------------------------------- */
+/* ==        CONTACT & LOISIRS             */
+/*---------------------------------------- */
+#contactLoisir{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+
+/* ---------------------------------------- */
+/* ==            FOOTER                 */
+/*---------------------------------------- */
+
+/*     sous partie      */
+
+/*     sous partie      */
+
+/* ---------------------------------------- */
+/* ==       MEDIAS QUERIS        */
+/*---------------------------------------- */
+
+/*     sous partie      */
+
+/*     sous partie      */
+
+/* 4 breaking-points :
+
+Les très petits écrans (< 768 px : pour les écrans dont la largeur est comprise entre 0 px et 768 px)
+
+Tablettes (768 px - 991 px)
+
+Ordinateurs (992 px - 1199 px)
+
+Grands écrans d'ordinateurs et télévisions*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Général */
+ 
+
+
+
+
+
+
+
 
 
 
@@ -75,7 +351,7 @@ a:visited{
 /* Partie Gauche */
 
 
-#gauche{
+/*#gauche{
     width: 30%;
     text-align: center;
     background-color:#FFD740;
@@ -85,13 +361,7 @@ a:visited{
 .gauche{
     margin:0 15%;
 }
-#cadrePhoto{
-    text-align: center;
-    margin-top: 40px
-}
-#photo{
-    border-radius: 90px;
-    margin: auto;
+
 }
 #gauche h2{
     color: #FFD740;
@@ -112,25 +382,13 @@ a:visited{
 #contact{
     text-align: left;
 }
-#gauche i{
-    color:#37474F;
-    width:35px;
-    height: 35px;
-    font-size: 2em; 
-}
-.icones{
-    border: 2px solid #37474F;
-    padding: 10px;
-    margin:5px;
-    border-radius: 50px;
-    text-align: center;
-}
+
 aside div{
     display: flex;
     justify-content: space-around; 
     padding-bottom: 20px;
     flex-wrap:wrap;
-}
+}*/
 
 
 
@@ -143,53 +401,38 @@ aside div{
 
 /* Partie Droite */
 
-
-
-#droite{
-    width: 70%;
-    padding:0 40px;
-}
-#droite h2{
-    display: flex;
-    margin: 50px 0 30px 0;
-}
-#droite ul{
-    padding: 0;
-     
-}
-#droite li:first-child {
+.section li {
     list-style-type: none; /* on annule la puce par défaut */
-    background-image: url(images/cropped-bullet-point-1_20%20px%202.0.png); /* on affiche l'image souhaitée */
+    background-image: url(images/point-orange-20px.png); /* on affiche l'image souhaitée */
     background-repeat: no-repeat; /* on annule la répétition par défaut */
-    background-position: left 6px; /* on positionne où l'on veut */
+    background-position: left 24px; /* on positionne où l'on veut */
     padding-left: 40px; /* pour éviter la superposition du contenu */
     margin-bottom: 30px;
 }
-#droite li {
-    list-style-type: none; /* on annule la puce par défaut */
-    background-image: url(images/bullet_vide.png); /* on affiche l'image souhaitée */
-    background-repeat: no-repeat; /* on annule la répétition par défaut */
-    background-position: left 6px; /* on positionne où l'on veut */
-    padding-left: 40px; /* pour éviter la superposition du contenu */
-    margin-bottom: 30px;
+.section li:first-child {
+    background-image: url(images/bullet-point-orange-20px-2.0.png); /* on affiche l'image souhaitée */
 }
-#droite i{
+.section:nth-child(8) li {
+    background-position: left 10px; /* on positionne où l'on veut */
+    text-align: left
+}
+section i{
     font-size:1.3em;
     position: relative;
     bottom: 4px;
     margin-right: 30px;
     color:orange
 }
-#droite h2{
+section h2{
     border-bottom: 2px solid orange;
     color: black;
 }
-#droite p{
+section p{
     margin:0;
 }
 #recommand{
     display:flex;
-    justify-content: flex-start;
+    justify-content: center
 }
 #recommand div:first-child{
     padding-right: 20px;
