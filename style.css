@@ -21,7 +21,9 @@ SECTIONS :
  - Expérience professionnelle
  - Recommandations
  - A propos de moi
- - Contact&Loisirs
+ - Loisirs
+ - Contact
+
 
 */
 /* L		- 1 - */
@@ -96,9 +98,6 @@ h1,h2,h4,h5{
 p{
     text-align: justify;
 }
-i{
-}
-
 a{
     text-decoration: none;
     color:#FFC107;
@@ -108,13 +107,7 @@ section{
     margin-bottom: 100px
 }
 
-/*
-a:hover{
-    color: red;
-}
-a:visited{
-    color: darkblue;
-}*/
+
 
 /*     sous partie      */
 
@@ -279,7 +272,7 @@ h2 i{
 }
 
 /* ---------------------------------------- */
-/* ==        CONTACT & LOISIRS             */
+/* ==             CONTACT                  */
 /*---------------------------------------- */
 
 #contact div{
@@ -301,6 +294,12 @@ h2 i{
     padding-left: 70px; /* pour éviter la superposition du contenu */
     background-image: url(images/point-orange-20px.png);
 }
+
+/* ---------------------------------------- */
+/* ==             LOISIR                  */
+/*---------------------------------------- */
+
+
 #loisirs a i{
     color:#FFC107;
     font-size: 3em;
@@ -319,9 +318,9 @@ h2 i{
 /* ==            FOOTER                 */
 /*---------------------------------------- */
 
-/*     sous partie      */
 
-/*     sous partie      */
+
+
 
 /* ---------------------------------------- */
 /* ==       MEDIAS QUERIS        */
