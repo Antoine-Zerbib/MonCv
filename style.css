@@ -33,9 +33,7 @@ SECTIONS :
 /*---------------------------------------- */
 /*
 Black-grey (text) :	  #37474F;
-Dark gray (links, h1) :		#008dde
-Mid gray (visited links) :	#0006a1
-Light gray (h2) :		#747474
+
 */
 
 /* ---------------------------------------- */
@@ -100,12 +98,10 @@ p{
 }
 i{
 }
-ul{
-    padding: 0px; 
-}
+
 a{
     text-decoration: none;
-    color:black;
+    color:#FFC107;
 }
 section{
     text-align: center;
@@ -156,7 +152,7 @@ a:visited{
     box-shadow: 2px 2px 4px grey;
 }
 .couleur{
-    color: orange;
+    color: #FFC107;
     font-family: sans-serif;
 }
 h1{
@@ -193,23 +189,23 @@ h3{
        
 }
 #burger ul li{
+    padding: 0;
     line-height: 70px;
     height:70px;
-    color: white;
     margin: 20px auto;
-    background-color: orange;
+    background-color: #546E7A;
     text-transform: uppercase;
     font-family:  arial, serif;
-    box-shadow: 0px 0px 20px grey inset;
+    /*box-shadow: 0px 0px 15px #455A64 inset;*/
     cursor:pointer;
     vertical-align: middle;
     font-weight:bolder;
 }
 #burger ul li:hover{
-    color: yellow
+    color: red;
 }
 #burger ul li:visited{
-    color: red
+    color: orangered;
 }
 
 
@@ -223,39 +219,36 @@ h3{
         -  A propos  -
 */
 
-
 .section li {
     list-style-type: none; /* on annule la puce par défaut */
     background-image: url(images/point-orange-20px.png); /* on affiche l'image souhaitée */
     background-repeat: no-repeat; /* on annule la répétition par défaut */
-    background-position: left 96px; /* on positionne où l'on veut */
+    background-position: left 3px; /* on positionne où l'on veut */
     padding-left: 70px; /* pour éviter la superposition du contenu */
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+
 }
 .section li:first-child {
     background-image: url(images/bullet-point-orange-20px-2.0.png); /* on affiche l'image souhaitée */
 }
-.section:nth-child(8) li {
-    background-position: left 10px; /* on positionne où l'on veut */
-    text-align: left
-}
-.section i{
+
+h2 i{
     font-size:1.3em;
     position: relative;
     bottom: 4px;
     margin-right: 30px;
-    color:orange;
+    color:#FFC107;
 }
  
-section h4{
+.section h4{
     font-size: 1.5em;
     text-align: left;
 }
-section h5{
+.section h5{
     font-size: 1.5em;
     text-align: left
 }
-section h6{
+.section h6{
     text-align: left;
     font-size: 1.5em;
 }
@@ -263,7 +256,14 @@ section h6{
     margin:0;
     font-size: 1.6em
 }
-
+#recommand{
+    display:flex;
+    justify-content: left;
+}
+#recommand div:first-child{
+    padding-right: 20px;
+    width: 50%;
+}
 
 
 
@@ -275,22 +275,31 @@ section h6{
     justify-content: space-around;
 }
 #contact{
-    list-style-type: none;
-    padding: 0;
     text-align: left;
-    font-size: 1.6em;
+  
 }
 #contactLoisir div{
     width: 50%;
 }
+#contact ul{
+    padding-left: 0;
+}
+
 #contact li{
+    font-size: 1.6em;
     margin: 15px;
+    list-style-type: none; /* on annule la puce par défaut */
+    background-position: left 5px; /* on positionne où l'on veut */
+    text-align: left;
+    background-repeat: no-repeat; /* on annule la répétition par défaut */
+    padding-left: 70px; /* pour éviter la superposition du contenu */
+    background-image: url(images/point-orange-20px.png);
 }
 #contactLoisir .icones{
     margin: auto
 }
-#contactLoisir i{
-    color:#f16822;
+#loisirs a i{
+    color:#FFC107;
     font-size: 3em;
     height: 50px;
     width: 50px;
@@ -305,7 +314,6 @@ section h6{
     display: flex;
     flex-direction: column;    
 }
-
 
 
 /* ---------------------------------------- */
@@ -346,115 +354,3 @@ Grands écrans d'ordinateurs et télévisions*/
 
 
 
-
-
-
-
-
-
-
-
-
-/* Partie Droite */
-
-
-#recommand{
-    display:flex;
-    justify-content: left;
-}
-#recommand div:first-child{
-    padding-right: 20px;
-    width: 50%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*@font-face {
-    font-family: 'FFF_Tusj.ttf';
-    src: url('FFF_Tusj.ttf');
-}
-@font-face {
-    font-family: 'KaushanScript-Regular.otf';
-    src: url('KaushanScript-Regular.otf');
-}
-#liseret{
-    width: 10%;
-    height:900px;
-    float: left;
-    background:url(lodyas.png);
-    margin:0 20px;
-    border-radius: 10px;
-     box-shadow: 3px 3px 10px grey;
-}
-#monNom{
-    font-size: 25px;
-    margin: 30px 0 0 0;
-}
-header{
-    display:flex;
-    margin-bottom: 50px;
-}
-img{
-    border-radius: 4px;
-    margin: 5px 40px 0 30px;
-    border: 2px solid black;
-    box-shadow: 2px 2px 5px black;
-}
-#sections{
-    display: flex;
-}
-section{
-    margin-right: 25px;
-    width:30%;
-    min-width: 150px;
-    max-height: 530px;
-    overflow: hidden;
-}
-h1{
-    font-family: 'FFF_Tusj.ttf';
-}
-h3{
-    text-transform: uppercase;
-    text-align: center;
-}
-h4{
-    text-align: center;
-}
-h5{
-    margin:25px auto 0 auto;
-}
-#statut{
-    text-align: center;
-    margin: 0px auto 50px auto;
-    text-transform: uppercase; 
-}
-a:hover{
-    color: red;
-}
