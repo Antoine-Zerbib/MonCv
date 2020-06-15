@@ -65,10 +65,10 @@ Black-grey (text) :	  #37474F;
     
     font-family: arial, sans-serif;
     color: #37474F;
-    width: 900px; 
+    max-width: 1000px; 
     margin: auto;
     padding: 0 10%;
-    border: 1px solid red;
+    
 }
 h2{
     color: black;
