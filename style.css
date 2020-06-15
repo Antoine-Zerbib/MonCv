@@ -258,37 +258,13 @@ h2 i{
     margin:0;
     font-size: 1.6em
 }
-#recommand{
+#recommandations ul{
     display:flex;
-    justify-content: left;
-}
-#recommand div:first-child{
-    padding-right: 20px;
-    width: 50%;
-}
-
-
-
-/* ---------------------------------------- */
-/* ==        CONTACT & LOISIRS             */
-/*---------------------------------------- */
-#contactLoisir{
-    display: flex;
     justify-content: space-around;
+    
 }
-#contact{
-    text-align: left;
-  
-}
-#contactLoisir div{
-    width: 50%;
-}
-#contact ul{
-    padding-left: 0;
-}
-
-#contact li{
-    font-size: 1.6em;
+#recommandations li{
+    width: 350px;
     margin: 15px;
     list-style-type: none; /* on annule la puce par défaut */
     background-position: left 5px; /* on positionne où l'on veut */
@@ -297,8 +273,33 @@ h2 i{
     padding-left: 70px; /* pour éviter la superposition du contenu */
     background-image: url(images/point-orange-20px.png);
 }
-#contactLoisir .icones{
-    margin: auto
+#contact h5{
+    font-size: 0.9em;
+    text-align: left
+}
+
+/* ---------------------------------------- */
+/* ==        CONTACT & LOISIRS             */
+/*---------------------------------------- */
+
+#contact div{
+    display: flex;
+}
+#contact ul{
+    padding-left: 0;
+    margin:0 auto;
+}
+
+#contact li{
+    width: 350px;
+    font-size: 1.6em;
+    margin: 15px;
+    list-style-type: none; /* on annule la puce par défaut */
+    background-position: left 5px; /* on positionne où l'on veut */
+    text-align: left;
+    background-repeat: no-repeat; /* on annule la répétition par défaut */
+    padding-left: 70px; /* pour éviter la superposition du contenu */
+    background-image: url(images/point-orange-20px.png);
 }
 #loisirs a i{
     color:#FFC107;
@@ -310,11 +311,7 @@ h2 i{
     padding: 10px;
     text-align: center;
     box-shadow: 1px 1px 3px grey;
-    margin: 10px
-}
-#contactLoisir div:nth-child(2){
-    display: flex;
-    flex-direction: column;    
+    margin: 20px
 }
 
 
