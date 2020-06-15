@@ -181,7 +181,7 @@ h3{
     margin-bottom: 100px;
 }
 #burger ul{
-    
+    padding-left:0;
     width: 70%;
     list-style: none;
     font-size: 1.8em;
@@ -218,7 +218,9 @@ h3{
         -  Recommandations -
         -  A propos  -
 */
-
+.section ul{
+    padding-left: 0;
+}
 .section li {
     list-style-type: none; /* on annule la puce par défaut */
     background-image: url(images/point-orange-20px.png); /* on affiche l'image souhaitée */
