@@ -245,12 +245,12 @@ h2 i{
     text-align: left;
 }
 .section h5{
-    font-size: 1em;
+    font-size: 0.9em;
     text-align: left
 }
 .section h6{
     text-align: left;
-    font-size: 1em;
+    font-size: 0.9em;
 }
 .section p{
     margin:0;
