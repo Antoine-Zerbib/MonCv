@@ -162,7 +162,9 @@ section{
     height: 100%;
     box-shadow: 2px 2px 4px grey;
 }
-
+#photo:hover{
+    border: 3px solid orangered;
+}
 
 /*     Slider      */
 
