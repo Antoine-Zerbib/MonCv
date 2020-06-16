@@ -34,7 +34,7 @@ SECTIONS :
 /* ==       COLOR CODES           */
 /*---------------------------------------- */
 /*
-Black-grey (text) :	  #37474F;
+Black-grey (text-color) :	  #37474F;
 
 */
 
@@ -67,8 +67,8 @@ Black-grey (text) :	  #37474F;
     
     font-family: arial, sans-serif;
     color: #37474F;
-    max-width: 1000px; 
-    min-width:  750px;
+   /* max-width: 1000px; 
+    min-width:  750px;  */
     margin: auto;
     padding: 0 10%;
     
