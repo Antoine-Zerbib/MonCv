@@ -254,7 +254,7 @@ h2 i{
 }
 .section p{
     margin:0;
-    font-size: 1em
+    font-size: 0.9em
 }
 
 
@@ -294,7 +294,7 @@ h2 i{
 
 #contact li{
     width: 11em;
-    font-size: 1em;
+    font-size: 0.9em;
     margin: 15px;
     list-style-type: none; /* on annule la puce par défaut */
     background-position: left -2px; /* on positionne où l'on veut */
@@ -304,9 +304,10 @@ h2 i{
     background-image: url(images/point-orange-20px.png);
 }
 #contact h5{
-    font-size: 0.9em;
+    font-size: 1em;
     text-align: left
 }
+
 
 /* ---------------------------------------- */
 /* ==             LOISIR                  */
@@ -325,7 +326,12 @@ h2 i{
     box-shadow: 1px 1px 3px grey;
     margin: 20px
 }
-
+#loisirs a i:hover{
+    color: orangered;
+}
+#loisirs a i:visited{
+    color: navajowhite;
+}
 
 /* ---------------------------------------- */
 /* ==            FOOTER                 */
