@@ -143,10 +143,9 @@ section{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 200px;    
-    padding-right: 10%;
-    margin-bottom: 50px
-
+    height: 200px;
+    width:100%;
+    margin-bottom: 50px;
 }
 #infos div{    
     align-self: flex-end;
@@ -161,7 +160,7 @@ section{
     box-shadow: 2px 2px 4px grey;
 }
 #photo:hover{
-    border: 3px solid orangered;
+    border: 1.5px groove black;
 }
 
 /*     Slider      */
