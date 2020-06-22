@@ -180,6 +180,7 @@ nav{
 #burger ul{
     padding-left:0;
     width: 70%;
+    min-width: 300px;
     list-style: none;
     font-size: 0.9em;
     margin: auto;
