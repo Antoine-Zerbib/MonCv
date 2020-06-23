@@ -78,7 +78,7 @@ SECTIONS :
     width: 450px;
 }
 h1{
-    font-size: 2.6em;
+    font-size: 2em;
     font-family:'Roboto-Light.ttf', arial, serif;
     margin: 0 ;
     color: black;
@@ -93,7 +93,7 @@ h2{
 }
 h3{
     margin: 0;
-    font-size: 1em;
+    font-size: 0.78em;
 }
 h4{
     margin:0 0 5px 0; 
@@ -139,15 +139,18 @@ section{
 /*     h1     */ 
 
 #infos{
-    width:100%;
-    margin-bottom: 50px;
+    width:400px;
+    margin: 50px auto;
+    display:flex; 
+    justify-content: space-around;
 }
-#infos div{    
-}
-#cadrePhoto{
-    margin-right: 2%;
+#infos div{
+    width: 190px; 
+    align-self: flex-end;
+    /*aligne sur le bas l'image et le texte*/
 }
 #photo{
+    width: 100%;
     border-radius:100%;
     box-shadow: 2px 2px 4px grey;
 }
