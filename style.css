@@ -68,12 +68,16 @@ SECTIONS :
 /* ---------------------------------------- */
 /* == ÉLÉMENTS PRINCIPAUX */
 /*---------------------------------------- */
+body{
+    width: 100%
+}
 #container{
     
     font-family: arial, sans-serif;
     color: #37474F;  
     margin: auto;
-    padding-top:30px;
+    padding:30px;
+    
 }
 h1{
     font-size: 2em;
