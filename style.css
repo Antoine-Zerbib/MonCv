@@ -75,7 +75,7 @@ SECTIONS :
     color: #37474F;  
     margin: auto;
     padding: 30px 5%;
-    width: 300px;
+    width: 100%;
 }
 h1{
     font-size: 2em;
@@ -102,12 +102,6 @@ h5{
     font-size: 12px;
     margin: 0 0 5px 0;
 }
-h6{
-    font-size: 0.7em;
-    margin: 0;
-    text-align: center;
-}
-
 h1,h2,h4,h5{
     text-transform: uppercase;
 }
@@ -331,8 +325,11 @@ h2 i{
 /* ---------------------------------------- */
 /* ==            FOOTER                 */
 /*---------------------------------------- */
+
 footer{
-    font-size
+    width: 100%;
+    text-align: center;
+        font-size: 0.7em;
 }
 
 
