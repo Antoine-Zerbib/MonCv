@@ -40,7 +40,7 @@ SECTIONS :
 .couleur{
     color: #FFC107;
     font-family: sans-serif;
-    /*text-shadow: 2px 2px 4px #CFD8DC;*/
+    /*text-shadow: 2px 2px 4px #CFD8DC; Ombrage qui me plait, mais pas très tendance*/ 
 }
 
 
@@ -72,10 +72,10 @@ SECTIONS :
 #container{
     
     font-family: arial, sans-serif;
-    color: #37474F;
-    max-width: 1000px;   
+    color: #37474F;  
     margin: auto;
-    padding: 5%;
+    padding: 30px 5%;
+    width: 450px;
 }
 h1{
     font-size: 2.6em;
@@ -120,7 +120,7 @@ a{
 }
 section{
     text-align: center;
-    margin-bottom: 50px
+    margin-bottom: 50px;
 }
 
 
@@ -139,17 +139,10 @@ section{
 /*     h1     */ 
 
 #infos{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    /*height: 200px;*/
     width:100%;
     margin-bottom: 50px;
 }
 #infos div{    
-    align-self: flex-end;
 }
 #cadrePhoto{
     margin-right: 2%;
@@ -247,7 +240,7 @@ h2 i{
 }
 .section h5{
     font-size: 0.9em;
-    text-align: left
+    text-align: left;
 }
 .section h6{
     text-align: left;
@@ -255,7 +248,7 @@ h2 i{
 }
 .section p{
     margin:0;
-    font-size: 0.9em
+    font-size: 0.9em;
 }
 
 
@@ -306,7 +299,7 @@ h2 i{
 }
 #contact h5{
     font-size: 1em;
-    text-align: left
+    text-align: left;
 }
 
 
@@ -325,7 +318,7 @@ h2 i{
     padding: 10px;
     text-align: center;
     box-shadow: 1px 1px 3px grey;
-    margin: 20px
+    margin: 20px;
 }
 #loisirs a i:hover{
     color: orangered;
