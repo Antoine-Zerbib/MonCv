@@ -256,10 +256,11 @@ h2 i{
     display:flex;
     justify-content: space-around;
     padding-left:0;
+    text-align: left;
     
 }
 #recommandations li{
-    width: 120px;
+    width: 50%;
     list-style-type: none; /* on annule la puce par défaut */
     background-position: left -5px; /* on positionne où l'on veut */
     text-align: left;
@@ -280,12 +281,14 @@ h2 i{
     display: flex;
 }
 #contact ul{
+    width: 100%;
     padding-left: 0;
-    margin:0 auto;
+    margin:0 ;
+    
 }
 
 #contact li{
-    width: 110px;
+    width: 50%;
     font-size: 0.8em;
     margin-bottom: 10px;
     list-style-type: none; /* on annule la puce par défaut */
