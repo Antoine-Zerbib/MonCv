@@ -75,7 +75,7 @@ SECTIONS :
     color: #37474F;  
     margin: auto;
     padding: 30px 5%;
-    width: 450px;
+    width: 300px;
 }
 h1{
     font-size: 2em;
@@ -89,7 +89,7 @@ h1{
 
 h2{
     color: black;
-    font-size: 1em;
+    font-size: 0.9em;
 }
 h3{
     margin: 0;
@@ -103,7 +103,7 @@ h5{
     margin: 0 0 5px 0;
 }
 h6{
-    font-size: 1em;
+    font-size: 0.7em;
     margin: 0;
     text-align: center;
 }
@@ -145,7 +145,7 @@ section{
     justify-content: space-around;
 }
 #infos div{
-    width: 210px; 
+    width: 140px; 
     align-self: flex-end;
     /*aligne sur le bas l'image et le texte*/
     background-color: red;
@@ -221,8 +221,6 @@ nav{
     background-repeat: no-repeat; /* on annule la répétition par défaut */
     background-position: left -2px; /* on positionne où l'on veut */
     padding-left: 35px; /* pour éviter la superposition du contenu */
-    margin-bottom: 50px;
-
 }
 .section li:first-child {
     background-image: url(images/bullet-point-orange-20px-2.0.png); /* on affiche l'image souhaitée */
@@ -232,7 +230,7 @@ h2 i{
     font-size:1.7em;
     /*position: relative;
     bottom: 4px;*/
-    margin-right: 20px;
+    margin-right: 5px;
     color:#FFC107;
 }
  
@@ -263,14 +261,14 @@ h2 i{
     
 }
 #recommandations li{
-    width: 11em;
-    margin: 15px;
+    width: 120px;
     list-style-type: none; /* on annule la puce par défaut */
-    background-position: left -2px; /* on positionne où l'on veut */
+    background-position: left -5px; /* on positionne où l'on veut */
     text-align: left;
     background-repeat: no-repeat; /* on annule la répétition par défaut */
-    padding-left: 35px; /* pour éviter la superposition du contenu */
+    padding-left: 20px; /* pour éviter la superposition du contenu */
     background-image: url(images/point-orange-20px.png);
+    font-size: 0.8em;
 }
 #recommandations p{
     font-size: 0.9em;
@@ -289,14 +287,14 @@ h2 i{
 }
 
 #contact li{
-    width: 11em;
-    font-size: 0.9em;
-    margin: 15px;
+    width: 110px;
+    font-size: 0.8em;
+    margin-bottom: 10px;
     list-style-type: none; /* on annule la puce par défaut */
-    background-position: left -2px; /* on positionne où l'on veut */
+    background-position: left -3px; /* on positionne où l'on veut */
     text-align: left;
     background-repeat: no-repeat; /* on annule la répétition par défaut */
-    padding-left: 35px; /* pour éviter la superposition du contenu */
+    padding-left: 20px; /* pour éviter la superposition du contenu */
     background-image: url(images/point-orange-20px.png);
 }
 #contact h5{
@@ -334,8 +332,9 @@ h2 i{
 /* ---------------------------------------- */
 /* ==            FOOTER                 */
 /*---------------------------------------- */
-
-
+footer{
+    font-size
+}
 
 
 
