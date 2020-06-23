@@ -148,7 +148,6 @@ section{
     width: 140px; 
     align-self: flex-end;
     /*aligne sur le bas l'image et le texte*/
-    background-color: red;
 }
 #photo{
     width: 100%;
