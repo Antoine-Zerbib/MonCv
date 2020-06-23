@@ -68,14 +68,12 @@ SECTIONS :
 /* ---------------------------------------- */
 /* == ÉLÉMENTS PRINCIPAUX */
 /*---------------------------------------- */
-
 #container{
     
     font-family: arial, sans-serif;
     color: #37474F;  
     margin: auto;
-    padding: 30px;
-    width:fit-content;
+    padding-top:30px;
 }
 h1{
     font-size: 2em;
@@ -138,8 +136,10 @@ section{
 #infos{
     width:300px;
     margin-bottom : 50px;
+    margin: 0 auto 50px auto;
     display:flex; 
     justify-content: space-around;
+    
 }
 #infos div{
     width: 140px; 
