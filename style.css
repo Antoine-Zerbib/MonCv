@@ -211,12 +211,10 @@ nav{
         -  Recommandations -
         -  A propos  -
 */
-.section{
+
+.section ul, #propos{
     padding-left: 30px;
     padding-right: 30px;
-}
-.section ul{
-    padding-left: 0;
 }
 .section li {
     list-style-type: none; /* on annule la puce par défaut */
@@ -295,7 +293,6 @@ h2 i{
 }
 
 #contact li{
-    width: 50%;
     font-size: 0.8em;
     margin-bottom: 10px;
     list-style-type: none; /* on annule la puce par défaut */
