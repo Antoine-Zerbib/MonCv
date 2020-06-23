@@ -212,7 +212,7 @@ nav{
         -  A propos  -
 */
 
-.section ul, #propos{
+.section ul, #propos, #contact, #recommandations{
     padding-left: 30px;
     padding-right: 30px;
 }
