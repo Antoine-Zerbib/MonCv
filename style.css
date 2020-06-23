@@ -225,9 +225,10 @@ nav{
     padding-bottom : 20px
 }
 .section li:first-child {
+    background-position: left -0px; /* on positionne où l'on veut */
     background-image: url(images/bullet-point-orange-20px-2.0.png); /* on affiche l'image souhaitée */
 }
-
+ 
 h2 i{
     font-size:1.7em;
     /*position: relative;
@@ -267,7 +268,7 @@ h2 i{
 #recommandations li{
     width: 50%;
     list-style-type: none; /* on annule la puce par défaut */
-    background-position: left -5px; /* on positionne où l'on veut */
+    background-position: left -4px; /* on positionne où l'on veut */
     text-align: left;
     background-repeat: no-repeat; /* on annule la répétition par défaut */
     padding-left: 20px; /* pour éviter la superposition du contenu */
