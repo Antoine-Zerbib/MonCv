@@ -139,20 +139,22 @@ section{
 /*     h1     */ 
 
 #infos{
-    width:400px;
-    margin: 50px auto;
+    width:100%;
+    margin-bottom : 50px;
     display:flex; 
     justify-content: space-around;
 }
 #infos div{
-    width: 190px; 
+    width: 210px; 
     align-self: flex-end;
     /*aligne sur le bas l'image et le texte*/
+    background-color: red;
 }
 #photo{
     width: 100%;
     border-radius:100%;
     box-shadow: 2px 2px 4px grey;
+    cursor:pointer;
 }
 #photo:hover{
     box-shadow: 2px 2px 15px #FFC107;
@@ -175,22 +177,19 @@ nav{
 }
 #burger ul{
     padding-left:0;
-    width: 70%;
-    min-width: 300px;
+    width: 300px;
     list-style: none;
-    font-size: 0.9em;
+    font-size: 1em;
     margin: auto;
-       
 }
 #burger ul li{
     padding: 0;
     line-height: 2.5em;
     height:2.5em;
-    margin: 3% auto;
+    margin: 10px auto;
     background-color: #546E7A;
     text-transform: uppercase;
     font-family:  arial, serif;
-    /*box-shadow: 0px 0px 15px #455A64 inset;*/
     cursor:pointer;
     vertical-align: middle;
     font-weight:bolder;
@@ -322,6 +321,7 @@ h2 i{
     text-align: center;
     box-shadow: 1px 1px 3px grey;
     margin: 20px;
+    cursor:pointer;
 }
 #loisirs a i:hover{
     color: orangered;
