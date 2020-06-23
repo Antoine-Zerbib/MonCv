@@ -74,8 +74,8 @@ SECTIONS :
     font-family: arial, sans-serif;
     color: #37474F;  
     margin: auto;
-    padding: 30px 5%;
-    width:100%;
+    padding: 30px;
+    width:fit-content;
 }
 h1{
     font-size: 2em;
