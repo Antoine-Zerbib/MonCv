@@ -69,7 +69,8 @@ SECTIONS :
 /* == ÉLÉMENTS PRINCIPAUX */
 /*---------------------------------------- */
 body{
-    width: 100%
+    width: 100%;
+    margin: 0;
 }
 #container{
     font-family: arial, sans-serif;
