@@ -213,9 +213,13 @@ nav{
         -  A propos  -
 */
 
-.section ul, #propos, #contact, #recommandations{
+.section ul, #propos{
     padding-left: 30px;
     padding-right: 30px;
+}
+#contact, #recommandations{
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .section li {
     list-style-type: none; /* on annule la puce par défaut */
