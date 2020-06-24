@@ -310,7 +310,7 @@ h2 i{
     background-repeat: no-repeat; /* on annule la répétition par défaut */
     padding-left: 20px; /* pour éviter la superposition du contenu */
     background-image: url(images/point-orange-20px.png);
-     background-color: aqua;
+     background-color: orange;
 }
 #contact h5{
     font-size: 1em;
