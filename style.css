@@ -101,7 +101,7 @@ h4{
     margin:0 0 5px 0; 
 }
 h5{
-    font-size: 0.8em;
+    font-size: 0.9em;
     margin: 0 0 5px 0;
 }
 h6{
@@ -271,6 +271,7 @@ h2 i{
     
 }
 #recommandations li{
+    font-size: 0.8em;
     width: 50%;
     list-style-type: none; /* on annule la puce par défaut */
     background-position: left -4px; /* on positionne où l'on veut */
