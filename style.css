@@ -269,6 +269,7 @@ h2 i{
     justify-content: space-around;
     padding-left:0;
     text-align: left;
+    font-size:1em;
     
 }
 #recommandations li{
@@ -279,7 +280,7 @@ h2 i{
     background-repeat: no-repeat; /* on annule la répétition par défaut */
     padding-left: 20px; /* pour éviter la superposition du contenu */
     background-image: url(images/point-orange-20px.png);
-   
+   background-color: aqua;
 }
 #recommandations p{
     font-size: 0.9em;
@@ -296,6 +297,7 @@ h2 i{
     width: 100%;
     padding-left: 0;
     margin:0 ;
+    font-size:1em;
     
 }
 
@@ -308,6 +310,7 @@ h2 i{
     background-repeat: no-repeat; /* on annule la répétition par défaut */
     padding-left: 20px; /* pour éviter la superposition du contenu */
     background-image: url(images/point-orange-20px.png);
+     background-color: aqua;
 }
 #contact h5{
     font-size: 1em;
@@ -370,12 +373,12 @@ footer{
     #loisirs a i{
     font-size: 3em;
     }
-    #recommandations ul, #contact ul, {
+   /* #recommandations ul, #contact ul, {
         font-size: 1.3em;
     }
      h5{
         font-size: 1em
-    }
+    }*/
 }
     
 
