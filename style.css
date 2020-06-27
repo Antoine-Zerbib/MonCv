@@ -367,10 +367,9 @@ footer{
         width: 200px; 
     }
     #infos{
-        background-color: powderblue;
+        background-color:burlywood;
         width:450px;
     } 
- 
     h2{
         font-size: 1.1em;
         margin-bottom: 30px;
@@ -389,24 +388,20 @@ footer{
     
 
 
-/*Tablettes et petits écrans ordi*/
+/*  Ecrans ordi  */
 
-/*@media only screen and (min-width: 750px) {
+@media only screen and (min-width:900px)
+
+ {
+     #infos{
+        background-color: greenyellow;
+     }
     
-
-/* écrans ordi*/
-
-/*@media only screen and (min-width: 950px) {
-    section{
-        font-size: 2em;
-    }
-    #infos{
-        background-color: green;
-    } 
-    footer{
-        font-size:1.5em;
-    }
 }
+
+
+/*@media only screen and (min-width: 950px)
+
 /*     sous partie      */
 
 /*     sous partie      */
