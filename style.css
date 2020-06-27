@@ -134,7 +134,7 @@ section{
 
 #infos{
     width:80%;
-    /*max-width: 550px;*/
+    max-width: 450px;
     margin-bottom : 50px;
     margin: 0 auto 50px auto;
     display:flex; 
@@ -359,6 +359,9 @@ footer{
 @media only screen and (orientation: landscape) {
     body/*section, footer*/{
         font-size: 1.2em;
+    }
+    #burger {
+        font-size: 0.85em;
     }
     #infos div{
         width: 200px; 
