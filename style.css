@@ -263,14 +263,16 @@ h2 i{
 
 
 /*  Recommandations   */
-
+#recommandations:nth-child(2){
+        
+}
 #recommandations ul{
+    max-width: 500px;
     display:flex;
     justify-content: space-around;
     padding-left:0;
-    text-align: left;
     font-size:1em;
-    
+    margin: auto
 }
 #recommandations li{
     font-size: 0.8em;
@@ -380,11 +382,17 @@ footer{
     #infos{
         background-color: red;
     } 
+    footer{
+        font-size:1.5em;
+    }
 }
 @media only screen and (min-width: 950px) {
     #infos{
         background-color: green;
     } 
+    footer{
+        font-size:1.5em;
+    }
 }
 /*     sous partie      */
 
