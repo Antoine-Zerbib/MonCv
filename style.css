@@ -152,7 +152,7 @@ section{
 }
 #photo{
     width: 100%;
-    max-width: 300px;
+    max-width: 250px;
     border-radius:100%;
     box-shadow: 2px 2px 4px grey;
     cursor:pointer;
