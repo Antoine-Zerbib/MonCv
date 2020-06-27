@@ -147,7 +147,7 @@ section{
     
 }
 #infos div{
-    width: 45%; 
+    width: 120px; 
     align-self: flex-end;
     /*aligne sur le bas l'image et le texte*/
 }
@@ -361,6 +361,16 @@ footer{
 /*Télephones*/
 
 @media only screen and (orientation: landscape) {
+    section{
+        font-size: 1.2em;
+    }
+    #infos div{
+        width: 200px; 
+    }
+    #infos{
+        background-color: blue;
+        width:450px;
+    } 
     h1{
         font-size:3em;
     }
@@ -377,8 +387,8 @@ footer{
     #loisirs a i{
         font-size: 3em;
     }
-    #contact ul, #recommandations ul, h5{
-        font-size: 1.3em;
+    /*#contact ul, #recommandations ul, h5{
+        font-size: 1.3em;*/
     }
 }
     
@@ -387,11 +397,14 @@ footer{
 /*Tablettes et petits écrans ordi*/
 
 @media only screen and (min-width: 750px) {
+    section{
+        font-size: 1.5em;
+    }
     #infos{
         background-color: red;
     } 
-    #contact ul, #recommandations ul, h5{
-        font-size: 0.8em;
+    /*#contact ul, #recommandations ul, h5{
+        font-size: 0.8em;*/
     }
     footer{
         font-size:1.5em;
@@ -411,6 +424,9 @@ footer{
 /* écrans ordi*/
 
 @media only screen and (min-width: 950px) {
+    section{
+        font-size: 2em;
+    }
     #infos{
         background-color: green;
     } 
