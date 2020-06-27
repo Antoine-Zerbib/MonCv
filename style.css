@@ -147,7 +147,7 @@ section{
     
 }
 #infos div{
-    width: 120px; 
+    width: 45%; 
     align-self: flex-end;
     /*aligne sur le bas l'image et le texte*/
 }
