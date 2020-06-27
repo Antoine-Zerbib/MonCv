@@ -370,15 +370,11 @@ footer{
         background-color: powderblue;
         width:450px;
     } 
-   /* h1{
-        font-size:3em;
-    }
+ 
     h2{
-        font-size: 1.4em
+        font-size: 1.1em;
+        margin-bottom: 30px;
     }
-    h3{
-        font-size:1.17em;
-    }*/
     #contact, #recommandations{
         padding-left: 30px;
         padding-right: 30px;
@@ -387,7 +383,7 @@ footer{
         font-size: 3em;
     }
     #contact div ul, #recommandations ul, h5{
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 }
     
