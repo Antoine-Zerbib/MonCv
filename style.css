@@ -143,6 +143,7 @@ section{
 }
 #infos div{
     width: 45%; 
+    max-width: 250px;
     align-self: flex-end;
     /*aligne sur le bas l'image et le texte*/
 }
@@ -191,7 +192,7 @@ nav{
     font-weight:bolder;
 }
 #burger a:hover{
-    color: orangered;
+    color: peachpuff;
     text-shadow: 0px 0px 10px black;
 }
 /*style visité que j'aime bien mais pas tendance
