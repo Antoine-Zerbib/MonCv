@@ -139,6 +139,7 @@ section{
 
 #infos{
     width:80%;
+    max-width: 550px;
     margin-bottom : 50px;
     margin: 0 auto 50px auto;
     display:flex; 
@@ -376,12 +377,12 @@ footer{
 }
     
 @media only screen and (min-width: 750px) {
-    infos{
+    #infos{
         background-color: red;
     } 
 }
 @media only screen and (min-width: 950px) {
-    infos{
+    #infos{
         background-color: green;
     } 
 }
