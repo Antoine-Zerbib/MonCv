@@ -382,7 +382,7 @@ footer{
     #loisirs a i{
         font-size: 3em;
     }
-    #contact ul, #recommandations ul, h5{
+    #contact div ul, #recommandations ul, h5{
         font-size: 1.2em;
     }
 }
