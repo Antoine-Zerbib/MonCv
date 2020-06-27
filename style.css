@@ -124,22 +124,17 @@ section{
 
 
 
-/*     sous partie      */
-
-/*     sous partie      */
-
-/*     sous partie      */
 
 /* ---------------------------------------- */
 /* ==            HEADER                */
 /*---------------------------------------- */
 
 
-/*     h1     */ 
+
 
 #infos{
     width:80%;
-    max-width: 550px;
+    /*max-width: 550px;*/
     margin-bottom : 50px;
     margin: 0 auto 50px auto;
     display:flex; 
@@ -153,7 +148,7 @@ section{
 }
 #photo{
     width: 100%;
-    max-width: 250px;
+    /*max-width: 250px;*/
     border-radius:100%;
     box-shadow: 2px 2px 4px grey;
     cursor:pointer;
@@ -163,7 +158,6 @@ section{
     /*box-shadow: 0px 0px 10px black;*/
 }
 
-/*     Slider      */
 
 
 
@@ -396,7 +390,7 @@ footer{
 
 /*Tablettes et petits écrans ordi*/
 
-@media only screen and (min-width: 750px) {
+/*@media only screen and (min-width: 750px) {
     section{
         font-size: 1.5em;
     }
@@ -405,7 +399,7 @@ footer{
     } 
     /*#contact ul, #recommandations ul, h5{
         font-size: 0.8em;*/
-    }
+   /* }
     footer{
         font-size:1.5em;
     }
@@ -423,7 +417,7 @@ footer{
 
 /* écrans ordi*/
 
-@media only screen and (min-width: 950px) {
+/*@media only screen and (min-width: 950px) {
     section{
         font-size: 2em;
     }
