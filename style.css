@@ -4,28 +4,18 @@
 /*---------------------------------------- */
 
 /* L1		- 1 - Mentions */
-/* L10		- 2 - Éléments principaux */
-/* L2		- 3 - Définitions des polices */
-/* L70		- 4 - Blocs and Misc*/
-/* L150		- 5 - Header */
-/* L400		-  6 - Main */
-/* L2136	- 7 - Footer */
-
-/*
-HEADER
-
-SECTIONS :
- - Bandeau
- - Burger
- - Formations
- - Expérience professionnelle
- - Recommandations
- - A propos de moi
- - Loisirs
- - Contact
+/* L71		- 2 - Éléments principaux */
+/* L50		- 3 - Définitions des polices */
+/* L130		- 5 - Header */
+/* L166		- 6 - Burger */
+/* L204		- 7 - Sections*/
+/* L287		- 8 - Contact*/
+/* L318		- 9 - Loisir*/
+/* L341	    - 10 - Footer */
+/* L354		- 11 - Media Queries*/
 
 
-*/
+
 /* L		- 1 - */
 /* L		- 2 - */
 /* L		- 3 - */
@@ -86,7 +76,6 @@ h1{
     color: black;
     font-weight: normal;
     line-height:0.9em;
-    /*text-shadow: 2px 2px 4px #78909C;*/
 }
 
 h2{
@@ -149,14 +138,12 @@ section{
 }
 #photo{
     width: 100%;
-    /*max-width: 250px;*/
     border-radius:100%;
     box-shadow: 2px 2px 4px grey;
     cursor:pointer;
 }
 #photo:hover{
     box-shadow: 2px 2px 15px #FFC107;
-    /*box-shadow: 0px 0px 10px black;*/
 }
 
 
@@ -219,16 +206,16 @@ section{
     padding-right: 10px;
 }
 .section li {
-    list-style-type: none; /* on annule la puce par défaut */
-    background-image: url(images/point-orange-20px.png); /* on affiche l'image souhaitée */
-    background-repeat: no-repeat; /* on annule la répétition par défaut */
-    background-position: left -2px; /* on positionne où l'on veut */
-    padding-left: 35px; /* pour éviter la superposition du contenu */
+    list-style-type: none; 
+    background-image: url(images/point-orange-20px.png); 
+    background-repeat: no-repeat;
+    background-position: left -2px;
+    padding-left: 35px; 
     padding-bottom : 20px
 }
 .section li:first-child {
-    background-position: left -0px; /* on positionne où l'on veut */
-    background-image: url(images/bullet-point-orange-20px-2.0.png); /* on affiche l'image souhaitée */
+    background-position: left -0px;
+    background-image: url(images/bullet-point-orange-20px-2.0.png);
 }
 h2 i{
     font-size:1.7em;
@@ -354,8 +341,8 @@ footer{
 
 /*Télephones*/
 
-@media only screen and (orientation: landscape) {
-    body/*section, footer*/{
+@media only screen and (orientation: landscape){
+    body{
         font-size: 1.2em;
     }
     #burger {
@@ -390,6 +377,7 @@ footer{
     body{
         background-color: rgba(255, 104 ,0 ,0.1)
     }
+}
 
 
 
