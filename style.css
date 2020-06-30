@@ -70,7 +70,7 @@ body{
     padding-top:30px;
     
 }
-h1{
+h2{
     font-size: 2em;
     font-family:'Roboto-Light.ttf', arial, serif;
     margin: 0 ;
@@ -79,11 +79,11 @@ h1{
     line-height:0.9em;
 }
 
-h2{
+h6{
     color: black;
     font-size: 0.9em;
 }
-h3{
+h1{
     margin: 0;
     font-size: 0.78em;
 }
@@ -94,10 +94,10 @@ h5{
     font-size: 0.9em;
     margin: 0 0 5px 0;
 }
-h6{
+h3{
     margin: 0;
 }
-h1,h2,h4,h5{
+h2,h6,h4,h5{
     text-transform: uppercase;
 }
 p{
@@ -136,6 +136,9 @@ section{
     max-width: 200px;
     align-self: flex-end;
     /*aligne sur le bas l'image et le texte*/
+}
+header p{
+    margin: 0;
 }
 #photo, #photoOrdi{
     width: 100%;
@@ -218,7 +221,7 @@ section{
     background-position: left -0px;
     background-image: url(images/bullet-point-orange-20px-2.0.png);
 }
-h2 i{
+h6 i{
     font-size:1.7em;
     margin-right: 5px;
     color:#FFC107;
@@ -232,7 +235,7 @@ h2 i{
     font-size: 0.9em;
     text-align: left;
 }
-.section h6{
+.section h3{
     text-align: left;
     font-size: 0.9em;
 }
@@ -330,7 +333,6 @@ footer{
     width: 100%;
     text-align: center;
     margin-bottom: 30px;
-    font-size:1.2em;
 }
 
 
@@ -356,7 +358,7 @@ footer{
     #infos{
         width:450px;
     } 
-    h2{ 
+    h6{ 
         font-size: 1.1em;
         margin-bottom: 30px;
     }
@@ -385,11 +387,12 @@ footer{
     .dispNone{
         display:none;
     }
-    h2{
+    h6{
         margin: 3vw 0;
     }
-    
-    
+    li{
+        background-size: 2.6vw;
+    }
     /*Réorganisation des divs*/
     
     
@@ -411,23 +414,23 @@ footer{
     .computer:nth-child(1){
         order: 5; /* header*/
         position: absolute;
-        top:10vw;
+        top:8.5vw;
     }
    
     .computer:nth-child(3){
         order: 6; /* formations */
         position: absolute;
-        top:25vw;
+        top:20.6vw;
     }
     .computer:nth-child(4){
         order: 7; /* expérience */
         position: absolute;
-        top:70vw;
+        top:65vw;
     }
     .computer:nth-child(5){
         order: 8; /* recommandations */
         position: absolute;
-        top:132vw;
+        top:125vw;
     }
     
     
@@ -449,6 +452,22 @@ footer{
         margin-bottom: 0;
         padding-bottom: 3vw;
     }
+    #container{
+        display: flex;
+        flex-direction: column;
+    }
+    .gauche h6{
+        color: #FFC107;
+        background-color:#37474F; 
+        height: 2em;
+        line-height: 2em;
+        margin-top: 0;
+    }
+    .gauche h6 i{
+        display: none;
+    }
+    
+    /* Photo */
     #cadrePhoto{
         padding-top: 3vw;
     }
@@ -459,19 +478,15 @@ footer{
         box-shadow: none;
         padding-top: 0px;
     }
-    #container{
-        display: flex;
-        flex-direction: column;
-    }
-    .gauche h2{
-        color: #FFC107;
-        background-color:#37474F; 
-        height: 2em;
-        line-height: 2em;
-        margin-top: 0;
+    
+    /* A propos */
+    #propos{
+        padding: 0 3vw;
     }
     
-    /* contact */
+    
+    
+    /* Contact */
     #contact{
         padding-left: 0;
         padding-right: 0;
@@ -485,17 +500,21 @@ footer{
         background-image: none;
     }
     
-    /* loisirs */
+    /* Loisirs */
     #loisirs a i{
-        font-size: 2em;
+        font-size: 4vw;
         color:#37474F;
-        width: 1.05em;
-        height: 1.05em;
+        line-height: 5vw;
+        width: 5vw;
+        height: 5vw;
+        margin: 0.9vw;
+        border: 0.3vw solid #37474F;
     }
     #loisirs{
-        padding-top: 30vw;
+        padding-top: 25vw;
         padding-bottom: 3vw;
         margin-bottom: 0;
+        
     }
     
     
@@ -504,32 +523,52 @@ footer{
     /* -- PARTIE DROITE --*/
     
     .droite{
-        width: 70%;
+        width: 60%;
         position: absolute;
-        left:30%;
+        left:35%;
         padding-bottom: 3vw;
         margin: 0;
     }
-    .droite h2{
+    .droite h6{
         text-align: left;
-        padding-left: 3vw;
-        border-bottom: 3vw;
-            
+        padding-bottom: 10px;
+        border-bottom: 1.5px solid #FFC107;   
     }
+    .droite ul{
+        padding:0;
+    }
+    .droite li{
+        padding-left: 3vw;
+    }
+    
     #infos{
         margin: 0 ;
-        flex-direction: row-reverse;
-        width: 70%;
+        width: 60%;
         max-width: none;
-        justify-content: flex-end;
-        padding-left: 30px
+        justify-content: flex-start;
     }
-    #infos{
-        width: 100%;
+    #infos h2{
+        display: flex
     }
-
+    #infos p:first-child{
+        padding-right: 1.5vw;
+    }
+    #recommandations{
+        padding: 0;
+    }
+    #recommandations ul{
+        max-width: none;
+        
+    }
+    #recommandations li{
+        padding-left: 3vw;
+    }
+    h1{
+        font-size: 2.1vw;
+    }
+   
             
-
+}
 
 
 
