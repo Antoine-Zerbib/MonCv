@@ -60,6 +60,7 @@
 /*---------------------------------------- */
 body{
     width: 100%;
+    min-width: 350px;
     margin: 0;
 }
 #container{
@@ -136,7 +137,7 @@ section{
     align-self: flex-end;
     /*aligne sur le bas l'image et le texte*/
 }
-#photo{
+#photo, #photoOrdi{
     width: 100%;
     border-radius:100%;
     box-shadow: 2px 2px 4px grey;
@@ -338,6 +339,7 @@ footer{
 /* ==       MEDIAS QUERIS        */
 /*---------------------------------------- */
 
+#photoOrdi{display:none}
 
 /*Télephones*/
 
@@ -375,10 +377,110 @@ footer{
 
 @media only screen and (min-width:900px){
     body{
-        background-color: rgba(255, 104 ,0 ,0.1)
+        background-color: rgba(255, 104 ,0 ,0.1);
+        font-size: 2vw;
     }
+    .dispNone{
+        display:none;
+    }
+    
+    
+    
+    /*Réorganisation des divs*/
+    
+    
+    .computer:nth-child(9){
+        order:1; /* photo */
+    }
+    
+    .computer:nth-child(8){
+        order: 2; /* contacts */
+    }
+    .computer:nth-child(6){
+        order: 3; /* a propos */
+    }
+    .computer:nth-child(7){
+        order: 4; /* loisirs */
+    }
+    .computer:nth-child(1){
+        order: 5; /* header*/
+    }
+    .computer:nth-child(2){
+        order: 99; /* ? */
+    }
+    .computer:nth-child(3){
+        order: 15; /* formations */
+    }
+    .computer:nth-child(4){
+        order: 15; /* expérience */
+    }
+    .computer:nth-child(5){
+        order: 15; /* recommandations */
+    }
+    
+    
+    
+    /* Ajustement des divs */
+    
+    
+    
+
+    /* Partie gauche */
+    
+    .gauche{
+        width: 30%;
+        background-color: #FFC107;
+        margin-bottom: 0;
+    }
+    #photoOrdi{
+        display:flex;
+        width: 60%; 
+        margin: 0 auto;
+        box-shadow: none;
+    }
+    #container{
+        display: flex;
+        flex-direction: column;
+    }
+    .gauche h2{
+        color: #FFC107;
+        background-color:#37474F; 
+    }
+    #contact{
+        padding: 0
+    }
+    #contact div{
+        flex-direction: column;
+        padding: 0 30px
+    }
+    #contact li{
+        padding-left: 0px;
+        background-image: none;
+    }
+    #loisirs a i{
+        font-size: 2em;
+        color:white;
+        width: 1.1em;
+        height: 1.1em;
+    }
+    
+
+    /* Partie droite*/
+    
+    .droite{
+        width: 70%;
+    }
+    #infos div{
+        ;
+    }
+  
+    
+    
+    
+   
 }
 
+            
 
 
 

@@ -24,10 +24,10 @@
         
         <div id="container">
             
-            <header id="infos">
+            <header id="infos" class="computer" >
                 <div>
                     <a href="Photo%20de%20profil.jpg" target="blank">
-                        <img src="ProfilSamll.jpg" alt="mon image de profil" id="photo" >
+                        <img src="ProfilSamll.jpg" alt="mon image de profil" id="photo" class="dispNone">
                     </a>
                 </div>
                 <div>
@@ -47,13 +47,13 @@
                 </div>
             </header>
             
-            
-            <nav id="burger">
+            <nav id="burger" class="dispNone">
                 <ul>
                      <li>
                          <a href="#formations">
                          Formations
-                         </a></li>
+                         </a>
+                    </li>
                      <li>
                          <a href="#experience">
                          Expérience professionnelle
@@ -80,7 +80,7 @@
                 </ul>
             </nav>
             
-            <section id="formations" class="section">
+            <section id="formations" class="section computer droite" >
                     <h2>
                         <i class="fas fa-graduation-cap" >
                         </i>
@@ -125,7 +125,7 @@
                     
                 </section>
                 
-                <section id="experience" class="section">
+                <section id="experience" class="section computer droite">
                     <h2>
                         <i class="fas fa-briefcase">
                         </i>
@@ -185,7 +185,7 @@
                     
                 </section>
                 
-                <section id="recommandations">
+                <section id="recommandations" class="computer droite">
                     <h2>
                         <i class="fas fa-user-edit"></i>
                         recommandations
@@ -204,9 +204,9 @@
                     </ul>
                 </section>
             
-                <section id="aPropos" class="section">
+                <section id="aPropos" class="section computer gauche">
                     <h2>
-                        <i class="fas fa-id-card">
+                        <i class="fas fa-id-card" class="dispNone">
                         </i>
                         à propos de moi
                     </h2>
@@ -215,9 +215,9 @@
                     </p>
                 </section>
             
-                <section id="loisirs">
+                <section id="loisirs" class="computer gauche">
                     <h2>
-                        <i class="fas fa-thumbs-up"></i>
+                        <i class="fas fa-thumbs-up" class="dispNone"></i>
                         loisirs
                     </h2>
                     <a href="https://awe365.com/guide-to-niseko-snowboarding-holidays/" target="blank" class="icones">
@@ -234,9 +234,9 @@
                     </a>
                 </section>
             
-                <section id="contact">
+                <section id="contact" class="computer gauche ">
                         <h2 id="h2left" >
-                            <i class="fas fa-address-book">
+                            <i class="fas fa-address-book" class="dispNone">
                             </i>
                             contact
                         </h2>
@@ -275,11 +275,18 @@
                             </ul>   
                         </div>
             </section>
-           
+            
+                <!--  Image site sur ordi  -->
+            <div class="computer gauche">
+                <a href="Photo%20de%20profil.jpg" target="blank">
+                    <img src="ProfilSamll.jpg" alt="mon image de profil" id="photoOrdi" >
+                </a>
+            </div>
+                <!--  Image site sur ordi  -->
             
         </div> 
         
-        <footer>
+        <footer class="dispNone">
             <h6>
                 Vous rêvez de votre propre site web ?<br>Et bien, pourquoi pas !
             </h6>
