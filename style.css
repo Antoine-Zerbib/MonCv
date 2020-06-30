@@ -341,7 +341,7 @@ footer{
 
 #photoOrdi{display:none}
 
-/*Télephones*/
+/* -- MEDIA Télephones -- */
 
 @media only screen and (orientation: landscape){
     body{
@@ -373,18 +373,21 @@ footer{
 }
     
 
-/*  Ecrans ordi  */
+/*  -- MEDIA Ecrans ordinateurs -- */
 
 @media only screen and (min-width:900px){
     body{
-        background-color: rgba(255, 104 ,0 ,0.1);
         font-size: 2vw;
-        
+    }
+    #container{
+        padding: 0;
     }
     .dispNone{
         display:none;
     }
-    
+    h2{
+        margin: 3vw 0;
+    }
     
     
     /*Réorganisation des divs*/
@@ -419,12 +422,12 @@ footer{
     .computer:nth-child(4){
         order: 7; /* expérience */
         position: absolute;
-        top:73vw;
+        top:70vw;
     }
     .computer:nth-child(5){
         order: 8; /* recommandations */
         position: absolute;
-        top:138vw;
+        top:132vw;
     }
     
     
@@ -470,8 +473,8 @@ footer{
     
     /* contact */
     #contact{
-       padding-left: 0;
-    padding-right: 0;
+        padding-left: 0;
+        padding-right: 0;
     }
     #contact div{
         flex-direction: column;
@@ -490,8 +493,9 @@ footer{
         height: 1.05em;
     }
     #loisirs{
-        padding-top: 45%;
+        padding-top: 30vw;
         padding-bottom: 3vw;
+        margin-bottom: 0;
     }
     
     
@@ -503,6 +507,8 @@ footer{
         width: 70%;
         position: absolute;
         left:30%;
+        padding-bottom: 3vw;
+        margin: 0;
     }
     .droite h2{
         text-align: left;
@@ -515,11 +521,13 @@ footer{
         flex-direction: row-reverse;
         width: 70%;
         max-width: none;
+        justify-content: flex-end;
+        padding-left: 30px
     }
     #infos{
         width: 100%;
     }
-   
+
             
 
 
