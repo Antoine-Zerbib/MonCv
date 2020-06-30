@@ -345,7 +345,7 @@ footer{
 
 /* -- MEDIA Télephones -- */
 
-@media only screen and (orientation: landscape){
+@media only screen and (orientation: landscape) and (max-width:899px){
     body{
         font-size: 1.2em;
     }
@@ -532,7 +532,7 @@ footer{
     .droite h6{
         text-align: left;
         padding-bottom: 10px;
-        border-bottom: 1.5px solid #FFC107;   
+        border-bottom: 0.2vw solid #FFC107;   
     }
     .droite ul{
         padding:0;
@@ -546,6 +546,10 @@ footer{
         width: 60%;
         max-width: none;
         justify-content: flex-start;
+    }
+    #infos div{
+        width: 100%;
+        max-width: none;
     }
     #infos h2{
         display: flex
