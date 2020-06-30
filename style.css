@@ -356,7 +356,7 @@ footer{
     #infos{
         width:450px;
     } 
-    h2{
+    h2{ 
         font-size: 1.1em;
         margin-bottom: 30px;
     }
@@ -379,6 +379,7 @@ footer{
     body{
         background-color: rgba(255, 104 ,0 ,0.1);
         font-size: 2vw;
+        
     }
     .dispNone{
         display:none;
@@ -392,7 +393,6 @@ footer{
     .computer:nth-child(9){
         order:1; /* photo */
     }
-    
     .computer:nth-child(8){
         order: 2; /* contacts */
     }
@@ -402,22 +402,35 @@ footer{
     .computer:nth-child(7){
         order: 4; /* loisirs */
     }
+    
+            /* ---  */
+    
     .computer:nth-child(1){
         order: 5; /* header*/
+        position: absolute;
+        top:10vw;
     }
+   
+    .computer:nth-child(3){
+        order: 6; /* formations */
+        position: absolute;
+        top:25vw;
+    }
+    .computer:nth-child(4){
+        order: 7; /* expérience */
+        position: absolute;
+        top:73vw;
+    }
+    .computer:nth-child(5){
+        order: 8; /* recommandations */
+        position: absolute;
+        top:138vw;
+    }
+    
+    
     .computer:nth-child(2){
         order: 99; /* ? */
     }
-    .computer:nth-child(3){
-        order: 15; /* formations */
-    }
-    .computer:nth-child(4){
-        order: 15; /* expérience */
-    }
-    .computer:nth-child(5){
-        order: 15; /* recommandations */
-    }
-    
     
     
     /* Ajustement des divs */
@@ -425,18 +438,23 @@ footer{
     
     
 
-    /* Partie gauche */
+    /* -- PARTIE GAUCHE -- */
     
     .gauche{
         width: 30%;
         background-color: #FFC107;
         margin-bottom: 0;
+        padding-bottom: 3vw;
+    }
+    #cadrePhoto{
+        padding-top: 3vw;
     }
     #photoOrdi{
         display:flex;
         width: 60%; 
         margin: 0 auto;
         box-shadow: none;
+        padding-top: 0px;
     }
     #container{
         display: flex;
@@ -445,85 +463,68 @@ footer{
     .gauche h2{
         color: #FFC107;
         background-color:#37474F; 
+        height: 2em;
+        line-height: 2em;
+        margin-top: 0;
     }
+    
+    /* contact */
     #contact{
-        padding: 0
+       padding-left: 0;
+    padding-right: 0;
     }
     #contact div{
         flex-direction: column;
-        padding: 0 30px
+        padding: 0 3vw
     }
     #contact li{
         padding-left: 0px;
         background-image: none;
     }
+    
+    /* loisirs */
     #loisirs a i{
         font-size: 2em;
-        color:white;
-        width: 1.1em;
-        height: 1.1em;
+        color:#37474F;
+        width: 1.05em;
+        height: 1.05em;
+    }
+    #loisirs{
+        padding-bottom: 25vw;
     }
     
+    
+    
 
-    /* Partie droite*/
+    /* -- PARTIE DROITE --*/
     
     .droite{
         width: 70%;
+        position: absolute;
+        left:30%;
     }
-    #infos div{
-        ;
+    .droite h2{
+        text-align: left;
+        padding-left: 3vw;
+        border-bottom: 3vw;
+            
     }
-  
-    
-    
-    
+    #infos{
+        margin: 0 ;
+        flex-direction: row-reverse;
+        width: 70%;
+        max-width: none;
+    }
+    #infos{
+        width: 100%;
+    }
    
-}
-
             
 
 
 
 
 
-
-
-
-/*  Ecrans ordi  */
-
-/*@media only screen and (min-width:900px){
-    body{
-        font-size: 2em;
-    }
-    #burger {
-        font-size: 0.5em;
-    }
-    #infos{
-        
-        background-color: greenyellow;
-    }
-    #infos div{
-        width: 46%; 
-        max-width: 500px;}
-    
-    #container{
-        display: flex;
-        
-        flex-wrap: wrap;
-        
-    }
-    #infos{
-        height: 240px;
-        margin-left: 0;
-    }
-  
-    #burger{
-        
-    }
-    section{
-        max-width: 900px;
-    }
-}
 
 
 
