@@ -67,8 +67,6 @@ body{
     font-family: arial, sans-serif;
     color: #37474F;  
     margin: auto;
-    padding-top:30px;
-    
 }
 h2{
     font-size: 2em;
@@ -109,7 +107,6 @@ a{
 }
 section{
     text-align: center;
-    margin-bottom: 50px;
 }
 
 
@@ -129,6 +126,7 @@ section{
     margin: 0 auto 50px auto;
     display:flex; 
     justify-content: space-around;
+    padding-top:30px;
     
 }
 #infos div{
@@ -140,11 +138,12 @@ section{
 header p{
     margin: 0;
 }
-#photo, #photoOrdi{
-    width: 100%;
+.photos{
     border-radius:100%;
+}
+#photo{
+    width: 100%;
     box-shadow: 2px 2px 4px grey;
-    cursor:pointer;
 }
 #photo:hover{
     box-shadow: 2px 2px 15px #FFC107;
@@ -184,11 +183,16 @@ header p{
     color: peachpuff;
     text-shadow: 0px 0px 10px black;
 }
-/*style visité que j'aime bien mais pas tendance
+
+/*
 
 #burger a:visited{
-    color: navajowhite;
-}*/
+color: navajowhite;
+}
+
+style visité que j'aime bien mais pas tendance
+
+*/
 
 
 /* ---------------------------------------- */
@@ -255,7 +259,7 @@ h6 i{
     justify-content: space-around;
     padding-left:0;
     font-size:1em;
-    margin: auto
+    margin: auto;
 }
 #recommandations li{
     font-size: 0.8em;
@@ -284,8 +288,6 @@ h6 i{
     width: 100%;
     padding-left: 0;
     margin:0 ;
-    font-size:1em;  
-    
 }
 #contact li{
     font-size: 0.8em;
@@ -333,7 +335,18 @@ footer{
     width: 100%;
     text-align: center;
     margin-bottom: 30px;
+    margin-top: 50px;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -393,9 +406,14 @@ footer{
     li{
         background-size: 2.6vw;
     }
-    /*Réorganisation des divs*/
     
     
+    
+    /* Réorganisation des divs */
+    
+    #container{
+        position: relative;
+    }
     .computer:nth-child(9){
         order:1; /* photo */
     }
@@ -415,22 +433,26 @@ footer{
         order: 5; /* header*/
         position: absolute;
         top:8.5vw;
+        left:35%;
     }
    
     .computer:nth-child(3){
         order: 6; /* formations */
         position: absolute;
         top:20.6vw;
+        left:35%;
     }
     .computer:nth-child(4){
         order: 7; /* expérience */
         position: absolute;
         top:65vw;
+        left:35%;
     }
     .computer:nth-child(5){
         order: 8; /* recommandations */
         position: absolute;
         top:125vw;
+        left:35%;
     }
     
     
@@ -442,8 +464,12 @@ footer{
     /* Ajustement des divs */
     
     
-    
+    #container{
+        display: flex;
+        flex-direction: column;
+    }
 
+    
     /* -- PARTIE GAUCHE -- */
     
     .gauche{
@@ -452,10 +478,7 @@ footer{
         margin-bottom: 0;
         padding-bottom: 3vw;
     }
-    #container{
-        display: flex;
-        flex-direction: column;
-    }
+    
     .gauche h6{
         color: #FFC107;
         background-color:#37474F; 
@@ -475,7 +498,6 @@ footer{
         display:flex;
         width: 60%; 
         margin: 0 auto;
-        box-shadow: none;
         padding-top: 0px;
     }
     
@@ -493,11 +515,11 @@ footer{
     }
     #contact div{
         flex-direction: column;
-        padding: 0 3vw
+        padding: 0 3vw;
     }
     #contact li{
         padding-left: 0px;
-        background-image: none;
+        background-image: none; 
     }
     
     /* Loisirs */
@@ -524,8 +546,6 @@ footer{
     
     .droite{
         width: 60%;
-        position: absolute;
-        left:35%;
         padding-bottom: 3vw;
         margin: 0;
     }
@@ -538,8 +558,20 @@ footer{
         padding:0;
     }
     .droite li{
-        padding-left: 3vw;
+        padding-left: 3.5vw;
+         background-position: left -4px;
     }
+    
+    
+    
+    /* Header */
+
+    h1{
+        font-size: 2.1vw;
+    }
+    
+    
+    /* Infos */
     
     #infos{
         margin: 0 ;
@@ -552,11 +584,14 @@ footer{
         max-width: none;
     }
     #infos h2{
-        display: flex
+        display: flex;
     }
     #infos p:first-child{
         padding-right: 1.5vw;
     }
+    
+    /* Recommandations */
+    
     #recommandations{
         padding: 0;
     }
@@ -566,10 +601,9 @@ footer{
     }
     #recommandations li{
         padding-left: 3vw;
+        background-position: left -5px;
     }
-    h1{
-        font-size: 2.1vw;
-    }
+    
    
             
 }
@@ -623,14 +657,7 @@ Grands écrans d'ordinateurs et télévisions*/
   @media (min-width: 1800px) { @content; }
 }
 
-// usage
-.my-box {
-  padding: 10px;
-  
-  @include for-desktop-up {
-    padding: 20px;
-  }
-}
+
 */
 
 
