@@ -427,7 +427,6 @@ footer{
     .computer:nth-child(7){
         order: 4; /* loisirs */
     }
-    
             /* ---  */
     
     .computer:nth-child(1){
@@ -446,13 +445,13 @@ footer{
     .computer:nth-child(4){
         order: 7; /* expérience */
         position: absolute;
-        top:65vw;
+        top:70vw;
         left:35%;
     }
     .computer:nth-child(5){
         order: 8; /* recommandations */
         position: absolute;
-        top:125vw;
+        top:117vw;
         left:35%;
     }
     
@@ -504,7 +503,7 @@ footer{
     
     /* A propos */
     #propos{
-        padding: 0 3vw;
+        padding: 0 3vw 0 2.2vw;
     }
     
     
@@ -533,11 +532,13 @@ footer{
         margin: 0.9vw;
         border: 0.3vw solid #37474F;
     }
+    #loisirs a i:hover{
+        color: peachpuff;
+    }
     #loisirs{
-        padding-top: 15vw;
         padding-bottom: 3vw;
         margin-bottom: 0;
-        
+        padding-top: 5.5em;
     }
     
     
