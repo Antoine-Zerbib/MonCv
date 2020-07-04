@@ -423,9 +423,14 @@ footer{
     }
     .computer:nth-child(6){
         order: 3; /* a propos */
+        padding-bottom: 7.5em;
     }
     .computer:nth-child(7){
         order: 4; /* loisirs */
+        position: absolute;
+        top:120vw;
+        left:0;
+    
     }
             /* ---  */
     
@@ -529,7 +534,7 @@ footer{
         line-height: 5vw;
         width: 5vw;
         height: 5vw;
-        margin: 0.9vw;
+        margin: 0.8vw;
         border: 0.3vw solid #37474F;
     }
     #loisirs a i:hover{
@@ -538,7 +543,6 @@ footer{
     #loisirs{
         padding-bottom: 3vw;
         margin-bottom: 0;
-        padding-top: 5.5em;
     }
     
     
