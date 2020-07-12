@@ -277,6 +277,9 @@ h6 i{
 #recommandations p{
     font-size: 0.9em;
 }
+.smallText{
+    font-size: 0.7em
+}
 
 /* ---------------------------------------- */
 /* ==             CONTACT                  */
@@ -288,7 +291,7 @@ h6 i{
     margin: auto
 }
 #contact div ul{
-    width: 100%;
+    width: 50%;
     padding-left: 0;
     margin:0 ;
 }
@@ -389,6 +392,9 @@ footer{
     #contact div ul, #recommandations ul, h5{
         font-size: 1.1em;
     }
+    .smallText{
+        font-size: 1em;
+    }
 }
     
 
@@ -410,7 +416,9 @@ footer{
     hr{
         width:4.5vw;
     }
-    
+    .smallText{
+        font-size: 1em;
+    }
     
     /* Réorganisation des divs */
     
