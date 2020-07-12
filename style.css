@@ -60,7 +60,7 @@
 /*---------------------------------------- */
 body{
     width: 100%;
-    min-width: 0px;
+    min-width: 320px;
     margin: auto;
 }
 #container{
@@ -128,22 +128,21 @@ hr{
 
 
 #infos{
-    /*width:80%;
-    max-width: 450px;*/
     margin-bottom : 50px;
     margin: 0 auto 50px auto;
     display:flex; 
     justify-content: space-around;
     padding-top:30px;
+    width: 300px;
     
 }
 #infos div{
-    width: 45%; 
-    max-width: 200px;
-    /*aligne sur le bas l'image et le texte*/
+    width: 140px; 
+    max-width: 250px;
+    
 }
 #infos div:nth-child(2){
-align-self: flex-end;
+align-self: flex-end; /*aligne sur le bas l'image et le texte*/
 }
 header p{
     margin: 0;
@@ -173,7 +172,7 @@ header p{
 }
 #burger ul{
     padding-left:0;
-    width: 300px;
+    width: 290px;
     list-style: none;
     font-size: 1em;
     margin: auto;
@@ -406,9 +405,6 @@ footer{
     body{
         font-size: 2vw;
     }
-    /*#container{
-        padding: 0;
-    }*/
     .dispNone{
         display:none;
     }
@@ -485,8 +481,7 @@ footer{
     #container{
         display: flex;
         flex-direction: column;
-        margin-left:0;
-        margin-right:0;
+        padding:0;
     }
 
     
@@ -554,6 +549,8 @@ footer{
     }
     #loisirs a i:hover{
         color: peachpuff;
+        box-shadow: 0px 0px 20px peachpuff;
+        text-shadow: -1px 1px 3px black;
     }
     #loisirs{
         padding-bottom: 3vw;
