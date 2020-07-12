@@ -60,13 +60,14 @@
 /*---------------------------------------- */
 body{
     width: 100%;
-    min-width: 350px;
-    margin: 0;
+    min-width: 0px;
+    margin: auto;
 }
 #container{
     font-family: arial, sans-serif;
-    color: #37474F;  
-    margin: auto;
+    color: #37474F;
+    padding: 15px;
+    
 }
 h2{
     font-size: 2em;
@@ -108,7 +109,14 @@ a{
 section{
     text-align: center;
 }
-
+hr{
+    left    ;
+    height:0.2vw;
+    width:30px;
+    background-color:#FFC107;
+    border: none;
+    margin: 0 auto auto 0;
+}
 
 
 
@@ -120,8 +128,8 @@ section{
 
 
 #infos{
-    width:80%;
-    max-width: 450px;
+    /*width:80%;
+    max-width: 450px;*/
     margin-bottom : 50px;
     margin: 0 auto 50px auto;
     display:flex; 
@@ -132,8 +140,10 @@ section{
 #infos div{
     width: 45%; 
     max-width: 200px;
-    align-self: flex-end;
     /*aligne sur le bas l'image et le texte*/
+}
+#infos div:nth-child(2){
+align-self: flex-end;
 }
 header p{
     margin: 0;
@@ -143,6 +153,7 @@ header p{
 }
 #photo{
     width: 100%;
+    min-width: 100px;
     box-shadow: 2px 2px 4px grey;
 }
 #photo:hover{
@@ -359,7 +370,7 @@ footer{
 
 /* -- MEDIA Télephones -- */
 
-@media only screen and (orientation: landscape) and (max-width:899px){
+@media only screen and (orientation: landscape) and (min-width:500px) and (max-width:899px){
     body{
         font-size: 1.2em;
     }
@@ -395,9 +406,9 @@ footer{
     body{
         font-size: 2vw;
     }
-    #container{
+    /*#container{
         padding: 0;
-    }
+    }*/
     .dispNone{
         display:none;
     }
@@ -407,7 +418,9 @@ footer{
     li{
         background-size: 2.6vw;
     }
-    
+    hr{
+        width:4.5vw;
+    }
     
     
     /* Réorganisation des divs */
@@ -472,6 +485,8 @@ footer{
     #container{
         display: flex;
         flex-direction: column;
+        margin-left:0;
+        margin-right:0;
     }
 
     
