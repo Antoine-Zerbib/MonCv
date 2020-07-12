@@ -127,12 +127,11 @@ hr{
 
 
 #infos{
-    margin-bottom : 50px;
     margin: 0 auto 50px auto;
     display:flex; 
     justify-content: space-around;
     padding-top:30px;
-    width: 300px;
+    width: 290px;
     
 }
 #infos div{
@@ -214,13 +213,8 @@ style visité que j'aime bien mais pas tendance
         -  A propos  -
 */
 
-.section ul, #propos{
-    padding-left: 30px;
-    padding-right: 30px;
-}
-#contact, #recommandations{
-    padding-left: 10px;
-    padding-right: 10px;
+.section ul{
+   padding:0;
 }
 .section li {
     list-style-type: none; 
