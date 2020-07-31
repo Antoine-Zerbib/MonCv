@@ -54,14 +54,17 @@
 /*---------------------------------------- */
 
 body{
-    width: 100%;
+    width: 90%;
     min-width: 320px;
     margin: auto;
-}
-#container{
     font-family: arial, sans-serif;
     color: #37474F;
-    padding: 15px;
+    padding: 20px;
+}
+main{
+    
+}
+aside{
     
 }
 h2{
@@ -180,14 +183,10 @@ header p{
 }
 
 /*
-
-#burger a:visited{
-color: navajowhite;
-}
-
+#burger a:visited{color: navajowhite;}
 style visité que j'aime bien mais pas tendance
-
 */
+
 
 /* ---------------------------------------- */
 /* ==            SECTIONS                */
@@ -242,15 +241,17 @@ h6 i{
 #recommandations ul{
     width: 100%;
     max-width: 500px;
-    display:flex;
+    /*display:flex;*/
     justify-content: space-around;
     padding-left:0;
     font-size:1em;
     margin: auto;
+    
 }
 #recommandations li{
-    font-size: 0.8em;
-    width: 50%;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+   /* width: 50%;*/
     list-style-type: none; /* on annule la puce par défaut */
     background-position: left -4px; /* on positionne où l'on veut */
     text-align: left;
@@ -258,29 +259,29 @@ h6 i{
     padding-left: 20px; /* pour éviter la superposition du contenu */
     background-image: url(images/point-orange-20px.png);
 }
-#recommandations p{
-    font-size: 0.9em;
+/*#recommandations p{
+    font-size: 0.9em;*/
 }
-.smallText{
+/*.smallText{
     font-size: 0.7em
-}
+}*/
 
 /* ---------------------------------------- */
 /* ==             CONTACT                  */
 /*---------------------------------------- */
 
 #contact div{
-    display: flex;
+   /* display: flex;*/
     max-width: 500px;
     margin: auto
 }
 #contact div ul{
-    width: 50%;
+    /*width: 50%;*/
     padding-left: 0;
     margin:0 ;
 }
 #contact li{
-    font-size: 0.8em;
+    font-size: 0.9em;
     margin-bottom: 10px;
     list-style-type: none; /* on annule la puce par défaut */
     background-position: left -3px; /* on positionne où l'on veut */
@@ -307,7 +308,7 @@ h6 i{
     padding: 10px;
     text-align: center;
     box-shadow: 1px 1px 3px grey;
-    margin: 20px;
+    margin: 15px;
     cursor:pointer;
 }
 #loisirs a i:hover{
@@ -321,10 +322,11 @@ h6 i{
 
 footer{
     width: 100%;
-    text-align: center;
     margin-bottom: 30px;
     margin-top: 50px;
-    font-size: 0.8em;
+}
+footer p{
+    text-align: center;
 }
 
 
@@ -385,6 +387,15 @@ footer{
 @media only screen and (min-width:900px){
     body{
         font-size: 2vw;
+    }
+    main{
+        
+    }
+    aside{
+        width: 30%;
+        background-color: #FFC107;
+        margin-bottom: 0;
+        padding-bottom: 3vw;
     }
     .dispNone{
         display:none;
@@ -454,7 +465,7 @@ footer{
     
     
     .computer:nth-child(2){
-        order: 99; /* ? */
+        order: 99; /* burger */
     }
     
     
@@ -470,12 +481,7 @@ footer{
     
     /* -- PARTIE GAUCHE -- */
     
-    .gauche{
-        width: 30%;
-        background-color: #FFC107;
-        margin-bottom: 0;
-        padding-bottom: 3vw;
-    }
+    .gauche
     
     .gauche h6{
         color: #FFC107;
