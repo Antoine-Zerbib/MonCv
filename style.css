@@ -83,7 +83,7 @@ h1{
     margin: 0;
     font-size: 0.78em;
 }
-h3{
+main .section span {
     margin: 0;
 }
 h2,h4{
@@ -212,7 +212,7 @@ h4 i{
     color:#FFC107;
 }
  
-.section h3{
+main .section span{
     text-align: left;
     font-size: 0.9em;
 }
@@ -363,9 +363,6 @@ footer p{
     #contact div ul, #recommandations ul{
         font-size: 1.1em;
     }
-    .smallText{
-        font-size: 1em;
-    }
 }
     
 
@@ -374,16 +371,9 @@ footer p{
 @media only screen and (min-width:900px){
     body{
         font-size: 2vw;
-    }
-    main{display: none
         
     }
-    aside{
-        width: 30%;
-        background-color: #FFC107;
-        margin-bottom: 0;
-        padding-bottom: 3vw;
-    }
+   
     .dispNone{
         display:none;
     }
@@ -394,50 +384,63 @@ footer p{
         width:4.5vw;
     }
     
-    /* Réorganisation des divs */
     
-    body{
-        position: relative;
+    
+    
+    /* --  REORGANISATION des divs --  */
+    
+
+    
+    /* -- PARTIE ASIDE -- */
+    
+    aside .computer:nth-child(1){
+        order:1;/* photo */
     }
-    .computer:nth-child(9){
-        order:1; /* photo */
+    
+    aside .computer:nth-child(4){
+        order: 2;/* contacts */
+        position: absolute;
+        top:24vw;
+        left:0;
     }
-    .computer:nth-child(8){
-        order: 2; /* contacts */
-    }
-    .computer:nth-child(6){
+    
+    aside .computer:nth-child(2){
         order: 3; /* a propos */
+        position: absolute;
+        top:63vw;
+        left:0;
         padding-bottom: 7.5em;
     }
-    .computer:nth-child(7){
+    
+    aside .computer:nth-child(3){
         order: 4; /* loisirs */
         position: absolute;
         top:120vw;
         left:0;
-    
     }
-            /* ---  */
     
-    .computer:nth-child(1){
+    /* -- PARTIE MAIN --*/
+    
+    main .computer:nth-child(1){
         order: 5; /* header*/
         position: absolute;
         top:8.5vw;
         left:35%;
     }
    
-    .computer:nth-child(3){
+    main .computer:nth-child(3){
         order: 6; /* formations */
         position: absolute;
         top:20.6vw;
         left:35%;
     }
-    .computer:nth-child(4){
+    main .computer:nth-child(4){
         order: 7; /* expérience */
         position: absolute;
         top:70vw;
         left:35%;
     }
-    .computer:nth-child(5){
+    main .computer:nth-child(5){
         order: 8; /* recommandations */
         position: absolute;
         top:117vw;
@@ -445,25 +448,37 @@ footer p{
     }
     
     
-    .computer:nth-child(2){
-        order: 99; /* burger */
+    main .computer:nth-child(2){
+        order:99; /* burger */
     }
     
     
-    /* Ajustement des divs */
     
     
-   body{
-        display: flex;
-        flex-direction: column;
-        padding:0;
+    
+    /* AJUSTEMENT des divs */
+    
+    
+    body{
+       width:100%;        
+       padding:0;
+    }
+    section{0%;
     }
 
     
-    /* -- PARTIE GAUCHE -- */
+    /* -- PARTIE ASIDE -- */
     
-    aside
     
+    aside{
+        position: relative;
+        width: 30%;
+        height: 140vw;
+        background-color: #FFC107;
+        margin-bottom: 0;
+        padding-bottom: 3vw;
+        display: flex;
+    }
     aside h4{
         color: #FFC107;
         background-color:#37474F; 
@@ -474,36 +489,41 @@ footer p{
     aside h4 i{
         display: none;
     }
-    
+    aside a{
+        color:#37474F;
+        
+    }
     /* Photo */
     #cadrePhoto{
         padding-top: 3vw;
+        width: 100%    
     }
     #photoOrdi{
         display:flex;
-        width: 60%; 
-        margin: 0 auto;
-        padding-top: 0px;
+        margin:auto;
+        width:60%;
     }
     
     /* A propos */
     #propos{
-        padding: 0 3vw 0 2.2vw;
+        padding: 0 3vw 0 3vw;
     }
     
     
     
     /* Contact */
-    #contact{
-        padding-left: 0;
-        padding-right: 0;
-    }
+   
     #contact div{
-        flex-direction: column;
-        padding: 0 3vw;
+                padding: 0 3vw 0 3vw;
+
+        flex-direction: column;       
+    }
+    #contact div ul{
+        max-width: none;
     }
     #contact li{
         padding-left: 0px;
+        padding-bottom: 0.8vw;
         background-image: none; 
     }
     
@@ -525,17 +545,22 @@ footer p{
     #loisirs{
         padding-bottom: 3vw;
         margin-bottom: 0;
+        width: 100%;
     }
     
     
     
 
-    /* -- PARTIE DROITE --*/
+    /* -- PARTIE MAIN --*/
     
+    
+   
     main{
-        width: 60%;
         padding-bottom: 3vw;
         margin: 0;
+    }
+    #recommandations ul, #formations li{
+        display: flex;
     }
     main h4{
         text-align: left;
