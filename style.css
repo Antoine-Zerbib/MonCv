@@ -75,7 +75,7 @@ h2{
     font-weight: normal;
     line-height:0.9em;
 }
-h6{
+h4{
     color: black;
     font-size: 0.9em;
 }
@@ -83,17 +83,10 @@ h1{
     margin: 0;
     font-size: 0.78em;
 }
-h4{
-    margin:0 0 5px 0; 
-}
-h5{
-    font-size: 0.9em;
-    margin: 0 0 5px 0;
-}
 h3{
     margin: 0;
 }
-h2,h6,h4,h5{
+h2,h4{
     text-transform: uppercase;
 }
 p{
@@ -213,20 +206,12 @@ style visité que j'aime bien mais pas tendance
     background-position: left -0px;
     background-image: url(images/bullet-point-orange-20px-2.0.png);
 }
-h6 i{
+h4 i{
     font-size:1.7em;
     margin-right: 5px;
     color:#FFC107;
 }
  
-.section h4{
-    font-size: 0.9em;
-    text-align: left;
-}
-.section h5{
-    font-size: 0.9em;
-    text-align: left;
-}
 .section h3{
     text-align: left;
     font-size: 0.9em;
@@ -259,6 +244,10 @@ h6 i{
     padding-left: 20px; /* pour éviter la superposition du contenu */
     background-image: url(images/point-orange-20px.png);
 }
+#recommandations span{
+    text-transform: uppercase;
+    font-weight: bold;
+}
 /*#recommandations p{
     font-size: 0.9em;*/
 }
@@ -277,8 +266,10 @@ h6 i{
 }
 #contact div ul{
     /*width: 50%;*/
+    width: 100%;
+    max-width: 500px;
     padding-left: 0;
-    margin:0 ;
+    margin:0 auto;
 }
 #contact li{
     font-size: 0.9em;
@@ -289,9 +280,6 @@ h6 i{
     background-repeat: no-repeat; /* on annule la répétition par défaut */
     padding-left: 20px; /* pour éviter la superposition du contenu */
     background-image: url(images/point-orange-20px.png);
-}
-#contact h5{
-    text-align: left;
 }
 
 /* ---------------------------------------- */
@@ -362,18 +350,17 @@ footer p{
     #infos{
         width:450px;
     } 
-    h6{ 
+    h4{ 
         font-size: 1.1em;
         margin-bottom: 30px;
     }
     #contact, #recommandations{
-        padding-left: 30px;
-        padding-right: 30px;
+        
     }
     #loisirs a i{
         font-size: 3em;
     }
-    #contact div ul, #recommandations ul, h5{
+    #contact div ul, #recommandations ul{
         font-size: 1.1em;
     }
     .smallText{
@@ -388,7 +375,7 @@ footer p{
     body{
         font-size: 2vw;
     }
-    main{
+    main{display: none
         
     }
     aside{
@@ -400,22 +387,16 @@ footer p{
     .dispNone{
         display:none;
     }
-    h6{
-        margin: 3vw 0;
-    }
     li{
         background-size: 2.6vw;
     }
     hr{
         width:4.5vw;
     }
-    .smallText{
-        font-size: 1em;
-    }
     
     /* Réorganisation des divs */
     
-    #container{
+    body{
         position: relative;
     }
     .computer:nth-child(9){
@@ -472,7 +453,7 @@ footer p{
     /* Ajustement des divs */
     
     
-    #container{
+   body{
         display: flex;
         flex-direction: column;
         padding:0;
@@ -481,16 +462,16 @@ footer p{
     
     /* -- PARTIE GAUCHE -- */
     
-    .gauche
+    aside
     
-    .gauche h6{
+    aside h4{
         color: #FFC107;
         background-color:#37474F; 
         height: 2em;
         line-height: 2em;
         margin-top: 0;
     }
-    .gauche h6 i{
+    aside h4 i{
         display: none;
     }
     
@@ -551,20 +532,20 @@ footer p{
 
     /* -- PARTIE DROITE --*/
     
-    .droite{
+    main{
         width: 60%;
         padding-bottom: 3vw;
         margin: 0;
     }
-    .droite h6{
+    main h4{
         text-align: left;
         padding-bottom: 10px;
         border-bottom: 0.2vw solid #FFC107;   
     }
-    .droite ul{
+    main ul{
         padding:0;
     }
-    .droite li{
+    main li{
         padding-left: 3.5vw;
          background-position: left -4px;
     }
