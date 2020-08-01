@@ -193,7 +193,7 @@ style visité que j'aime bien mais pas tendance
     background-image: url(images/point-orange-20px.png); 
     background-repeat: no-repeat;
     background-position: left -0.3vw;
-    padding-left: 3.5vw; 
+    padding-left: 5vw; 
     padding-bottom : 2vw
 }
 .section li:first-child {
@@ -235,7 +235,7 @@ main .section span{
     background-position: left -0.2vw; /* on positionne où l'on veut */
     text-align: left;
     background-repeat: no-repeat; /* on annule la répétition par défaut */
-    padding-left: 1vw; /* pour éviter la superposition du contenu */
+    padding-left: 4vw; /* pour éviter la superposition du contenu */
     background-image: url(images/point-orange-20px.png);
 }
 #recommandations span{
