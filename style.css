@@ -193,7 +193,7 @@ style visité que j'aime bien mais pas tendance
     background-image: url(images/point-orange-20px.png); 
     background-repeat: no-repeat;
     background-position: left -0.3vw;
-    padding-left: 5vw; 
+    padding-left: 20px; 
     padding-bottom : 2vw
 }
 .section li:first-child {
@@ -234,7 +234,7 @@ main .section span{
     background-position: left -0.2vw; /* on positionne où l'on veut */
     text-align: left;
     background-repeat: no-repeat; /* on annule la répétition par défaut */
-    padding-left: 4vw; /* pour éviter la superposition du contenu */
+    padding-left: 20px; /* pour éviter la superposition du contenu */
     background-image: url(images/point-orange-20px.png);
 }
 #recommandations span{
@@ -460,8 +460,6 @@ footer p{
        width:100%;        
        padding:0;
     }
-    section{0%;
-    }
 
     
     /* -- PARTIE ASIDE -- */
@@ -554,7 +552,7 @@ footer p{
     
    
     #recommandations ul, #formations li,#experience li{
-        display: flex;
+        display: flex;/*sépare les textes*/
         padding-bottom: 3vw;
     }
     #formations li p:nth-child(1),#experience li p:nth-child(1){
@@ -563,10 +561,12 @@ footer p{
         text-align: left
     }
     #formations li p:nth-child(2),#experience li p:nth-child(2){
-        
         width: 60%
     }
-    
+    .section li,#recommandation li,experience li{
+        /*pour eviter que les icones et le texte se chevauchent*/
+        padding-left: 4vw
+    }
     main h4{
         text-align: left;
         padding-bottom: 10px;
