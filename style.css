@@ -204,8 +204,7 @@ h4 i{
     font-size:1.7em;
     margin-right: 5px;
     color:#FFC107;
-}
- 
+} 
 main .section span{
     text-align: left;
     font-size: 0.9em;
@@ -374,7 +373,10 @@ footer p{
     hr{
         width:4.5vw;
     }
-    
+    h4 i{
+        vertical-align:text-bottom;
+        font-size:2.5vw;
+    }
     
     
     
@@ -478,11 +480,13 @@ footer p{
         color: #FFC107;
         background-color:#37474F; 
         height: 2em;
-        line-height: 2em;
+        line-height: 2.3;
         margin-top: 0;
+         
     }
     aside h4 i{
         display: none;
+        
     }
     aside a{
         color:#37474F;
