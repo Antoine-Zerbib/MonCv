@@ -61,12 +61,6 @@ body{
     color: #37474F;
     padding: 20px;
 }
-main{
-    
-}
-aside{
-    
-}
 h2{
     font-size: 2em;
     font-family:'Roboto-Light.ttf', arial, serif;
@@ -198,9 +192,9 @@ style visité que j'aime bien mais pas tendance
     list-style-type: none; 
     background-image: url(images/point-orange-20px.png); 
     background-repeat: no-repeat;
-    background-position: left -2px;
-    padding-left: 35px; 
-    padding-bottom : 20px
+    background-position: left -0.3vw;
+    padding-left: 3.5vw; 
+    padding-bottom : 2vw
 }
 .section li:first-child {
     background-position: left -0px;
@@ -234,14 +228,14 @@ main .section span{
     
 }
 #recommandations li{
-    margin-bottom: 20px;
+    margin-bottom: 1vw;
     font-size: 0.9em;
    /* width: 50%;*/
     list-style-type: none; /* on annule la puce par défaut */
-    background-position: left -4px; /* on positionne où l'on veut */
+    background-position: left -0.2vw; /* on positionne où l'on veut */
     text-align: left;
     background-repeat: no-repeat; /* on annule la répétition par défaut */
-    padding-left: 20px; /* pour éviter la superposition du contenu */
+    padding-left: 1vw; /* pour éviter la superposition du contenu */
     background-image: url(images/point-orange-20px.png);
 }
 #recommandations span{
@@ -354,9 +348,6 @@ footer p{
         font-size: 1.1em;
         margin-bottom: 30px;
     }
-    #contact, #recommandations{
-        
-    }
     #loisirs a i{
         font-size: 3em;
     }
@@ -421,38 +412,42 @@ footer p{
     
     /* -- PARTIE MAIN --*/
     
+    main{
+        display: flex;
+    }
+    
     main .computer:nth-child(1){
         order: 5; /* header*/
         position: absolute;
         top:8.5vw;
-        left:35%;
     }
    
     main .computer:nth-child(3){
         order: 6; /* formations */
         position: absolute;
-        top:20.6vw;
-        left:35%;
+        top:21vw;
     }
+    
     main .computer:nth-child(4){
         order: 7; /* expérience */
         position: absolute;
-        top:70vw;
-        left:35%;
+        top:67vw;
     }
+    
     main .computer:nth-child(5){
         order: 8; /* recommandations */
         position: absolute;
         top:117vw;
-        left:35%;
     }
-    
     
     main .computer:nth-child(2){
         order:99; /* burger */
     }
-    
-    
+
+    main .computer{
+        width:60%;
+        left:35%;
+    }
     
     
     
@@ -473,7 +468,7 @@ footer p{
     aside{
         position: relative;
         width: 30%;
-        height: 140vw;
+        height: 135vw;
         background-color: #FFC107;
         margin-bottom: 0;
         padding-bottom: 3vw;
@@ -522,7 +517,7 @@ footer p{
         max-width: none;
     }
     #contact li{
-        padding-left: 0px;
+        padding-left: 0vw;
         padding-bottom: 0.8vw;
         background-image: none; 
     }
@@ -553,15 +548,21 @@ footer p{
 
     /* -- PARTIE MAIN --*/
     
-    
    
-    main{
-        padding-bottom: 3vw;
-        margin: 0;
-    }
-    #recommandations ul, #formations li{
+    #recommandations ul, #formations li,#experience li{
         display: flex;
+        padding-bottom: 3vw;
     }
+    #formations li p:nth-child(1),#experience li p:nth-child(1){
+        padding-right: 4vw;
+        width: 30%;
+        text-align: left
+    }
+    #formations li p:nth-child(2),#experience li p:nth-child(2){
+        
+        width: 60%
+    }
+    
     main h4{
         text-align: left;
         padding-bottom: 10px;
@@ -585,23 +586,18 @@ footer p{
     
     
     /* Infos */
-    
-    #infos{
-        margin: 0 ;
-        width: 60%;
-        max-width: none;
-        justify-content: flex-start;
+    main{
+        padding: 50
     }
+ 
     #infos div{
         width: 100%;
         max-width: none;
     }
-    #infos h2{
+    h2{
         display: flex;
     }
-    #infos p:first-child{
-        padding-right: 1.5vw;
-    }
+    
     
     /* Recommandations */
     
