@@ -427,7 +427,7 @@ footer p{
     main .computer:nth-child(3){
         order: 6; /* formations */
         position: absolute;
-        top:21vw;
+        top:21.8vw;
     }
     
     main .computer:nth-child(4){
