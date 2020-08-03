@@ -216,6 +216,12 @@ main .section span{
     margin:0;
     font-size: 0.9em;
 }
+/* A propos */
+
+#propos{
+   
+   word-break:break-word;
+}
 
 /*  Recommandations   */
 
@@ -578,7 +584,7 @@ footer p{
         border-bottom: 0.2vw solid #FFC107;   
     }
     main ul{
-        padding:0;
+        padding:none;
     }
     main li{
         padding-left: 3.5vw;
