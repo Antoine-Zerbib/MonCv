@@ -579,7 +579,7 @@ footer p{
         border-bottom: 0.2vw solid #FFC107;   
     }
     main ul{
-        padding:none;
+        padding:0;
     }
     main li{
         padding-left: 3.5vw;
@@ -590,9 +590,6 @@ footer p{
     /* Header */
 
     /* Infos */
-    main{
-        padding: 50
-    }
  
     #infos div{
         width: 100%;
