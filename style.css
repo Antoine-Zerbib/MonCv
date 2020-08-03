@@ -93,6 +93,9 @@ a{
 section{
     text-align: center;
 }
+section span{
+        font-weight: bold;
+    }
 hr{
     height:0.2vw;
     width:30px;
@@ -219,15 +222,16 @@ main .section span{
 #recommandations ul{
     width: 100%;
     max-width: 500px;
-    /*display:flex;*/
-    justify-content: space-around;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: left;
     padding-left:0;
     font-size:1em;
     margin: auto;
     
 }
 #recommandations li{
-    margin-bottom: 1vw;
+    margin-bottom: 3vw;
     font-size: 0.9em;
    /* width: 50%;*/
     list-style-type: none; /* on annule la puce par défaut */
@@ -361,7 +365,8 @@ footer p{
 @media only screen and (min-width:900px){
     body{
         font-size: 2vw;
-        
+        width:100%;        
+        padding:0;
     }
    
     .dispNone{
@@ -380,13 +385,11 @@ footer p{
     
     
     
-    /* --  REORGANISATION des divs --  */
-    
-
-    
+  
     /* -- PARTIE ASIDE -- */
     
-    aside .computer:nth-child(1){
+    /* -  REORGANISATION des divs -  */
+     aside .computer:nth-child(1){
         order:1;/* photo */
     }
     
@@ -412,7 +415,94 @@ footer p{
         left:0;
     }
     
+    
+    /* -  AJUSTEMENTS du style -  */
+    
+    
+    aside{
+        position: relative;
+        width: 30%;
+        height: 135vw;
+        background-color: #FFC107;
+        margin-bottom: 0;
+        padding-bottom: 3vw;
+        display: flex;
+    }
+    aside h4{
+        color: #FFC107;
+        background-color:#37474F; 
+        height: 2em;
+        line-height: 2.3;
+        margin-top: 0;
+         
+    }
+    aside h4 i{
+        display: none;
+        
+    }
+    aside a{
+        color:#37474F;
+        
+    }
+/* Photo */
+    #cadrePhoto{
+        padding-top: 3vw;
+        width: 100%    
+    }
+    #photoOrdi{
+        display:flex;
+        margin:auto;
+        width:60%;
+    }
+    
+/* A propos */
+    #propos{
+        padding: 0 3vw 0 3vw;
+    }
+    
+/* Contact */
+   
+    #contact div{
+                padding: 0 3vw 0 3vw;
+
+        flex-direction: column;       
+    }
+    #contact div ul{
+        max-width: none;
+    }
+    #contact li{
+        padding-left: 0vw;
+        padding-bottom: 0.8vw;
+        background-image: none; 
+    }
+    
+/* Loisirs */
+    #loisirs a i{
+        font-size: 4vw;
+        color:#37474F;
+        line-height: 5vw;
+        width: 5vw;
+        height: 5vw;
+        margin: 0.8vw;
+        border: 0.3vw solid #37474F;
+    }
+    #loisirs a i:hover{
+        color: peachpuff;
+        box-shadow: 0px 0px 20px peachpuff;
+        text-shadow: -1px 1px 3px black;
+    }
+    #loisirs{
+        padding-bottom: 3vw;
+        margin-bottom: 0;
+        width: 100%;
+    }
+    
+    
+    
+    
     /* -- PARTIE MAIN --*/
+    
+    /* -  REORGANISATION des divs -  */
     
     main{
         display: flex;
@@ -452,109 +542,24 @@ footer p{
     }
     
     
+    /* -  AJUSTEMENTS du style -  */
     
-    /* AJUSTEMENT des divs */
+/*  header */
     
-    
-    body{
-       width:100%;        
-       padding:0;
+    h1{
+        font-size: 2.1vw;
     }
-
-    
-    /* -- PARTIE ASIDE -- */
-    
-    
-    aside{
-        position: relative;
-        width: 30%;
-        height: 135vw;
-        background-color: #FFC107;
-        margin-bottom: 0;
-        padding-bottom: 3vw;
-        display: flex;
-    }
-    aside h4{
-        color: #FFC107;
-        background-color:#37474F; 
-        height: 2em;
-        line-height: 2.3;
-        margin-top: 0;
-         
-    }
-    aside h4 i{
-        display: none;
-        
-    }
-    aside a{
-        color:#37474F;
-        
-    }
-    /* Photo */
-    #cadrePhoto{
-        padding-top: 3vw;
-        width: 100%    
-    }
-    #photoOrdi{
-        display:flex;
-        margin:auto;
-        width:60%;
-    }
-    
-    /* A propos */
-    #propos{
-        padding: 0 3vw 0 3vw;
-    }
+    #infos div h2 span:nth-child(2){
+        padding-left: 1vw;
+    } /*espace entre nom et prenom*/
     
     
-    
-    /* Contact */
-   
-    #contact div{
-                padding: 0 3vw 0 3vw;
-
-        flex-direction: column;       
-    }
-    #contact div ul{
-        max-width: none;
-    }
-    #contact li{
-        padding-left: 0vw;
-        padding-bottom: 0.8vw;
-        background-image: none; 
-    }
-    
-    /* Loisirs */
-    #loisirs a i{
-        font-size: 4vw;
-        color:#37474F;
-        line-height: 5vw;
-        width: 5vw;
-        height: 5vw;
-        margin: 0.8vw;
-        border: 0.3vw solid #37474F;
-    }
-    #loisirs a i:hover{
-        color: peachpuff;
-        box-shadow: 0px 0px 20px peachpuff;
-        text-shadow: -1px 1px 3px black;
-    }
-    #loisirs{
-        padding-bottom: 3vw;
-        margin-bottom: 0;
-        width: 100%;
-    }
-    
-    
-    
-
-    /* -- PARTIE MAIN --*/
-    
-   
+/*  sections */
     #recommandations ul, #formations li,#experience li{
         display: flex;/*sépare les textes*/
         padding-bottom: 3vw;
     }
+    
     #formations li p:nth-child(1),#experience li p:nth-child(1){
         padding-right: 4vw;
         width: 30%;
@@ -581,14 +586,8 @@ footer p{
     }
     
     
-    
     /* Header */
 
-    h1{
-        font-size: 2.1vw;
-    }
-    
-    
     /* Infos */
     main{
         padding: 50
@@ -602,7 +601,6 @@ footer p{
         display: flex;
     }
     
-    
     /* Recommandations */
     
     #recommandations{
@@ -613,10 +611,11 @@ footer p{
         
     }
     #recommandations li{
+        margin-bottom: 0;
         padding-left: 3vw;
         background-position: left -5px;
     }
-    
+   
    
             
 }
