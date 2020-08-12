@@ -77,9 +77,6 @@ h1{
     margin: 0;
     font-size: 0.78em;
 }
-main .section span {
-    margin: 0;
-}
 h2,h4{
     text-transform: uppercase;
 }
@@ -92,6 +89,9 @@ a{
 }
 section{
     text-align: center;
+}
+main .section span {
+    margin: 0;
 }
 section span{
         font-weight: bold;
